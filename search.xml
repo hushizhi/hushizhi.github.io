@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[在iPhone上设置汕头大学邮箱的方法]]></title>
+    <url>%2F2018%2F03%2F25%2F%E5%9C%A8iPhone%E4%B8%8A%E8%AE%BE%E7%BD%AE%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E9%82%AE%E7%AE%B1%E7%9A%84%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[1.在iPhone上下载QQ邮箱应用。2.进入QQ邮箱：选择“添加账户” -&gt; 选择“其他邮箱” -&gt; 输入你在汕大的“邮箱名+邮箱密码”;3.此处需要填写服务器等信息，表明你的邮箱已经运行在这个服务器上，而且数据时加密的： 新邮件服务器的SMTP服务器设置 SMTP服务器地址： smtp.partner.outlook.cn 端口：587 加密方法：TLS4.配置完成，祝你珍惜汕大时光，好好生活，好好学习。 附：1.安卓手机配置也是一样的流程。 2.配置邮箱也可以在iPhone自带邮箱应用上进行，或者在“设置”的“账户与密码”里面进行设置。 3.新邮件系统不支持POP和IMAP，只支持Exchange协议。]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[sklearn.svm.SVC参数设置详解]]></title>
     <url>%2F2018%2F03%2F22%2Fsklearn-svm-SVC%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE%E8%AF%A6%E8%A7%A3%2F</url>
     <content type="text"><![CDATA[sklearn.svm.SVC 参数说明 这个函数也是基于libsvm实现的。参数列表如下：sklearn.svm.SVC(C=1.0, kernel=’rbf’, degree=3, gamma=’auto’, coef0=0.0, shrinking=True, probability=False,tol=0.001, cache_size=200, class_weight=None, verbose=False, max_iter=-1, decision_function_shape=None,random_state=None) 参数详解如下： l C：C-SVC的惩罚参数C?默认值是1.0 C越大，相当于惩罚松弛变量，希望松弛变量接近0，即对误分类的惩罚增大，趋向于对训练集全分对的情况，这样对训练集测试时准确率很高，但泛化能力弱。C值小，对误分类的惩罚减小，允许容错，将他们当成噪声点，泛化能力较强。 l kernel ：核函数，默认是rbf，可以是‘linear’, ‘poly’, ‘rbf’, ‘sigmoid’, ‘precomputed’ 0 – 线性：u’v 1 – 多项式：(gammau’v + coef0)^degree 2 – RBF函数：exp(-gamma|u-v|^2) 3 –sigmoid：tanh(gammau’v + coef0) l degree ：多项式poly函数的维度，默认是3，选择其他核函数时会被忽略。 l gamma ： ‘rbf’,‘poly’ 和‘sigmoid’的核函数参数。默认是’auto’，则会选择1/n_features l coef0 ：核函数的常数项。对于‘poly’和 ‘sigmoid’有用。 l probability ：是否采用概率估计？.默认为False l shrinking ：是否采用shrinking heuristic方法，默认为true l tol ：停止训练的误差值大小，默认为1e-3 l cache_size ：核函数cache缓存大小，默认为200 l class_weight ：类别的权重，字典形式传递。设置第几类的参数C为weight*C(C-SVC中的C) l verbose ：允许冗余输出？ l max_iter ：最大迭代次数。-1为无限制。 l decision_function_shape ：‘ovo’, ‘ovr’ or None, default=None3 l random_state ：数据洗牌时的种子值，int值 主要调节的参数有：C、kernel、degree、gamma、coef0。]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[sklearn.svm.SVC 参数说明]]></title>
-    <url>%2F2018%2F03%2F22%2Fsklearn-svm-SVC-%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E%2F</url>
-    <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
     <title><![CDATA[基础篇二进制位操作]]></title>
