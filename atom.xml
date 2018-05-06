@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hushizhi.github.io/"/>
-  <updated>2018-05-05T06:44:42.000Z</updated>
+  <updated>2018-05-06T09:26:59.000Z</updated>
   <id>https://hushizhi.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://hushizhi.github.io/uncategorized/2018/03/25/%E5%9C%A8iPhone%E4%B8%8A%E8%AE%BE%E7%BD%AE%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E9%82%AE%E7%AE%B1%E7%9A%84%E6%96%B9%E6%B3%95.html"/>
     <id>https://hushizhi.github.io/uncategorized/2018/03/25/在iPhone上设置汕头大学邮箱的方法.html</id>
     <published>2018-03-25T03:51:24.000Z</published>
-    <updated>2018-05-05T06:44:42.000Z</updated>
+    <updated>2018-05-06T09:26:59.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>1.在iPhone上下载QQ邮箱应用。<br>2.进入QQ邮箱：选择“添加账户” -&gt; 选择“其他邮箱” -&gt; 输入你在汕大的“邮箱名+邮箱密码”;<br>3.此处需要填写服务器等信息，表明你的邮箱已经运行在这个服务器上，而且数据时加密的：<br>  新邮件服务器的SMTP服务器设置<br> <a id="more"></a><br>    SMTP服务器地址： smtp.partner.outlook.cn<br>    端口：587<br>    加密方法：TLS<br>4.配置完成，祝你珍惜汕大时光，好好生活，好好学习。</p><p>附：1.安卓手机配置也是一样的流程。<br>   2.配置邮箱也可以在iPhone自带邮箱应用上进行，或者在“设置”的“账户与密码”里面进行设置。<br>   3.新邮件系统不支持POP和IMAP，只支持Exchange协议。</p>]]></content>
     
