@@ -687,9 +687,11 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/images/avatar.png"
-                alt="joyoQi" />
+               <a href="/" class="site-author-image" rel="start" style="border:none">
+                <img class="site-author-image" itemprop="image"
+                 src="/uploads/avatar.gif"
+                 alt="joyoQi" />
+                </a>
             
               <p class="site-author-name" itemprop="name">joyoQi</p>
               <p class="site-description motion-element" itemprop="description">iOS AI 追风筝的孩子</p>
@@ -776,13 +778,39 @@
                   </li>
                 
               </ul>
+          <div id="days"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("08/21/2016 22:00:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
             </div>
           
 
          
           <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=25721228&auto=0&height=32"></iframe>
-
-          
 
         </div>
       </section>
@@ -801,7 +829,8 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016「無論做什麼事，總是要做到真心的真字。事無大小，皆須如此。」 &mdash; <span itemprop="copyrightYear">2018</span>
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; 2016「無論做什麼事，總是要做到真心的真字。事無大小，皆須如此。」 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -811,6 +840,12 @@
 </div>
 
 
+ <div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+ 
   <div class="powered-by">主题|<a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> </div>
 
 
@@ -1313,7 +1348,7 @@
 
   
   <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("", "");</script>
+  <script>AV.initialize("13129609072joyo", "13129609072joyo");</script>
   <script>
     function showTime(Counter) {
       var query = new AV.Query(Counter);
