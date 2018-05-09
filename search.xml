@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[毕业季前50天]]></title>
+    <url>%2Funcategorized%2F2018%2F05%2F09%2F%E6%AF%95%E4%B8%9A%E5%AD%A3%E5%89%8D50%E5%A4%A9.html</url>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"http://p8gu1ztx5.bkt.clouddn.com/Beyond%20-%20%E3%80%8A%E6%9B%BE%E6%98%AF%E6%8B%A5%E6%9C%89%E3%80%8B.mp4","pic":"http://p8gu1ztx5.bkt.clouddn.com/beyond.jpeg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 致谢 时光飞逝，岁月如梭。论文行文至此，四年本科大学时光匆匆如雨夜前的行人，突觉不舍与伤感。眺望往日，与三五同学篮球场挥舞汗水的身姿，挤在同一个实验室敲打键盘讨论学习的年少轻狂，欢声畅聊的东门小吃街对酒当歌，一幕幕恍如昨天，涌上心头。二十年的求学路，一路走来，一路含泪挥手离家，一路风尘仆仆归去，父母亲的白发如脑中所习得的油墨，渐行渐长；百感交集的此刻，更多是对过往沿途的怀恋，充满着感激，满怀的欣喜与感恩。]]></content>
+      <tags>
+        <tag>大学，毕业，杂记</tag>
+        <tag>beyond</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[怎么在iPhone设置汕大邮箱]]></title>
     <url>%2Funcategorized%2F2018%2F03%2F25%2F%E5%9C%A8iPhone%E4%B8%8A%E8%AE%BE%E7%BD%AE%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E9%82%AE%E7%AE%B1%E7%9A%84%E6%96%B9%E6%B3%95.html</url>
     <content type="text"><![CDATA[1.在iPhone上下载QQ邮箱应用。2.进入QQ邮箱：选择“添加账户” -&gt; 选择“其他邮箱” -&gt; 输入你在汕大的“邮箱名+邮箱密码”;3.此处需要填写服务器等信息，表明你的邮箱已经运行在这个服务器上，而且数据时加密的： 新邮件服务器的SMTP服务器设置 SMTP服务器地址： smtp.partner.outlook.cn 端口：587 加密方法：TLS4.配置完成，祝你珍惜汕大时光，好好生活，好好学习。 附：1.安卓手机配置也是一样的流程。 2.配置邮箱也可以在iPhone自带邮箱应用上进行，或者在“设置”的“账户与密码”里面进行设置。 3.新邮件系统不支持POP和IMAP，只支持Exchange协议。]]></content>
