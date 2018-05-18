@@ -123,7 +123,7 @@
 
 
 
-  <meta name="keywords" content="戚灼伟,joyo,Hexo,博客,iOS,Machine Learning,哲学,心理学,算法,游记,hushizhi" />
+  <meta name="keywords" content="Apriori,机器学习," />
 
 
 
@@ -136,16 +136,17 @@
 
 
 
+<meta name="keywords" content="Apriori,机器学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown语法入门">
-<meta property="og:url" content="https://hushizhi.github.io/uncategorized/2018/05/09/Markdown语法入门.html">
+<meta property="og:title" content="支持度，提升度，置信度">
+<meta property="og:url" content="https://hushizhi.github.io/uncategorized/2018/05/18/支持度，提升度，置信度.html">
 <meta property="og:site_name" content="戚灼伟的家园">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://hushizhi.github.io/uncategorized/2018/05/09/Markdown语法入门.html">
-<meta property="og:updated_time" content="2018-05-09T15:55:32.000Z">
+<meta property="og:image" content="https://hushizhi.github.io/uncategorized/2018/05/18/支持度，提升度，置信度.html">
+<meta property="og:updated_time" content="2018-05-18T01:16:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Markdown语法入门">
-<meta name="twitter:image" content="https://hushizhi.github.io/uncategorized/2018/05/09/Markdown语法入门.html">
+<meta name="twitter:title" content="支持度，提升度，置信度">
+<meta name="twitter:image" content="https://hushizhi.github.io/uncategorized/2018/05/18/支持度，提升度，置信度.html">
 
 
 
@@ -175,13 +176,13 @@
 
 
 
-  <link rel="canonical" href="https://hushizhi.github.io/uncategorized/2018/05/09/Markdown语法入门.html"/>
+  <link rel="canonical" href="https://hushizhi.github.io/uncategorized/2018/05/18/支持度，提升度，置信度.html"/>
 
 
 
 
 
-  <title>Markdown语法入门 | 戚灼伟的家园</title>
+  <title>支持度，提升度，置信度 | 戚灼伟的家园</title>
   
 
 
@@ -377,7 +378,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://hushizhi.github.io/uncategorized/2018/05/09/Markdown语法入门.html">
+    <link itemprop="mainEntityOfPage" href="https://hushizhi.github.io/uncategorized/2018/05/18/支持度，提升度，置信度.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="joyoQi">
@@ -394,7 +395,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Markdown语法入门</h1>
+          <h1 class="post-title" itemprop="name headline">支持度，提升度，置信度</h1>
         
 
         <div class="post-meta">
@@ -406,8 +407,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-09T23:55:32+08:00">
-                2018-05-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-18T09:15:16+08:00">
+                2018-05-18
               </time>
             
 
@@ -425,8 +426,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/uncategorized/2018/05/09/Markdown语法入门.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/uncategorized/2018/05/09/Markdown语法入门.html" itemprop="commentCount"></span>
+                <a href="/uncategorized/2018/05/18/支持度，提升度，置信度.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/uncategorized/2018/05/18/支持度，提升度，置信度.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -434,7 +435,7 @@
 
           
           
-             <span id="/uncategorized/2018/05/09/Markdown语法入门.html" class="leancloud_visitors" data-flag-title="Markdown语法入门">
+             <span id="/uncategorized/2018/05/18/支持度，提升度，置信度.html" class="leancloud_visitors" data-flag-title="支持度，提升度，置信度">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -461,7 +462,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0
+                  693
                 </span>
               
 
@@ -490,9 +491,25 @@
 
 <p><img src="https://" alt="" style="width:100%"></p>
 <a id="more"></a>
-<p>##</p>
-<p>##</p>
-<p>##</p>
+<p>Reference：关联分析中的支持度、置信度和提升度</p>
+<p>1.支持度（Support）<br>支持度表示项集 (X,Y)(X,Y) 在总项集里出现的概率。公式为：</p>
+<p>Support(X→Y)=P(X,Y)P(I)=P(X∪Y)P(I)=num(X∪Y)num(I)<br>Support(X→Y)=P(X,Y)P(I)=P(X∪Y)P(I)=num(X∪Y)num(I)<br>其中，num(I)num(I) 表示总事务集的个数， num(X∪Y)num(X∪Y) 表示含有 {X,Y}{X,Y} 的事务集的个数（个数也叫次数）。</p>
+<p>2.置信度（Confidence）<br>置信度表示在先决条件X发生的情况下，由关联规则 X→YX→Y 推出 YY 的概率。即在含有 XX 的项集中，含有 YY 的可能性，公式为：</p>
+<p>Confidence(X→Y)=P(Y|X)=P(X,Y)P(X)=P(X∪Y)P(X)<br>Confidence(X→Y)=P(Y|X)=P(X,Y)P(X)=P(X∪Y)P(X)<br>3.提升度（Lift）<br>提升度表示含有 XX 的条件下，同时含有 YY 的概率，与不含 XX 的条件下却含 YY 的概率之比。</p>
+<p>Lift(X→Y)=P(Y|X)P(Y)<br>Lift(X→Y)=P(Y|X)P(Y)<br>例1，已知有1000名顾客买年货，分为甲乙两组，每组各500人，其中甲组有500人买了茶叶，同时又有450人买了咖啡；乙组有450人买了咖啡.</p>
+<p>试求解</p>
+<p>1）“茶叶→→咖啡”的支持度</p>
+<p>2）“茶叶→→咖啡”的置信度</p>
+<p>3）“茶叶→→咖啡”的提升度</p>
+<p>分析：</p>
+<p>设 X={买茶叶}X={买茶叶} ，Y={买咖啡}Y={买咖啡}，则规则 “茶叶→→咖啡” 表示 “即买了茶叶，又买了咖啡”，于是，“茶叶→→咖啡”的支持度为</p>
+<p>Support(X→Y)=450/500=90%Support(X→Y)=450/500=90%<br>“茶叶→→咖啡”的置信度为</p>
+<p>Confidence(X→Y)=450/500=90%Confidence(X→Y)=450/500=90%<br>“茶叶→→咖啡”的提升度为</p>
+<p>Lift(X→Y)=Confidence(X→Y)P(Y)=90%((450+450)/1000)=90Lift(X→Y)=Confidence(X→Y)P(Y)=90%((450+450)/1000)=90<br>由于提升度 Lift(X→Y)=1Lift(X→Y)=1，表示 XX 与 YY 相互独立，即是否有 XX，对于 YY 的出现无影响。也就是说，是否购买咖啡，与有没有购买茶叶无关联。即规则“茶叶→→咖啡”不成立，或者说关联性很小，几乎没有，虽然它的支持度和置信度都高达90%，但它不是一条有效的关联规则。</p>
+<p>满足最小支持度和最小置信度的规则，叫做“强关联规则”。然而，强关联规则里，也分有效的强关联规则和无效的强关联规则。</p>
+<p>如果Lift(X→Y)&gt;1Lift(X→Y)&gt;1，则规则X→YX→Y是有效的强关联规则。</p>
+<p>如果Lift(X→Y)&lt;=1Lift(X→Y)&lt;=1，则规则 X→YX→Y是无效的强关联规则。</p>
+<p>特别地，如果Lift(X→Y)=1Lift(X→Y)=1，则表示 XX 与 YY 相互独立。</p>
 <hr>
       
     </div>
@@ -518,6 +535,14 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Apriori/" rel="tag"><i class="fa fa-tag"></i> Apriori</a>
+          
+            <a href="/tags/机器学习/" rel="tag"><i class="fa fa-tag"></i> 机器学习</a>
+          
+        </div>
+      
 
       
       
@@ -539,8 +564,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/uncategorized/2018/05/09/毕业季前50天.html" rel="next" title="毕业季前50天">
-                <i class="fa fa-chevron-left"></i> 毕业季前50天
+              <a href="/uncategorized/2018/05/09/Markdown语法入门.html" rel="next" title="Markdown语法入门">
+                <i class="fa fa-chevron-left"></i> Markdown语法入门
               </a>
             
           </div>
@@ -548,10 +573,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/uncategorized/2018/05/18/支持度，提升度，置信度.html" rel="prev" title="支持度，提升度，置信度">
-                支持度，提升度，置信度 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

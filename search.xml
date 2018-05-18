@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[支持度，提升度，置信度]]></title>
+    <url>%2Funcategorized%2F2018%2F05%2F18%2F%E6%94%AF%E6%8C%81%E5%BA%A6%EF%BC%8C%E6%8F%90%E5%8D%87%E5%BA%A6%EF%BC%8C%E7%BD%AE%E4%BF%A1%E5%BA%A6.html</url>
+    <content type="text"><![CDATA[Reference：关联分析中的支持度、置信度和提升度 1.支持度（Support）支持度表示项集 (X,Y)(X,Y) 在总项集里出现的概率。公式为： Support(X→Y)=P(X,Y)P(I)=P(X∪Y)P(I)=num(X∪Y)num(I)Support(X→Y)=P(X,Y)P(I)=P(X∪Y)P(I)=num(X∪Y)num(I)其中，num(I)num(I) 表示总事务集的个数， num(X∪Y)num(X∪Y) 表示含有 {X,Y}{X,Y} 的事务集的个数（个数也叫次数）。 2.置信度（Confidence）置信度表示在先决条件X发生的情况下，由关联规则 X→YX→Y 推出 YY 的概率。即在含有 XX 的项集中，含有 YY 的可能性，公式为： Confidence(X→Y)=P(Y|X)=P(X,Y)P(X)=P(X∪Y)P(X)Confidence(X→Y)=P(Y|X)=P(X,Y)P(X)=P(X∪Y)P(X)3.提升度（Lift）提升度表示含有 XX 的条件下，同时含有 YY 的概率，与不含 XX 的条件下却含 YY 的概率之比。 Lift(X→Y)=P(Y|X)P(Y)Lift(X→Y)=P(Y|X)P(Y)例1，已知有1000名顾客买年货，分为甲乙两组，每组各500人，其中甲组有500人买了茶叶，同时又有450人买了咖啡；乙组有450人买了咖啡. 试求解 1）“茶叶→→咖啡”的支持度 2）“茶叶→→咖啡”的置信度 3）“茶叶→→咖啡”的提升度 分析： 设 X={买茶叶}X={买茶叶} ，Y={买咖啡}Y={买咖啡}，则规则 “茶叶→→咖啡” 表示 “即买了茶叶，又买了咖啡”，于是，“茶叶→→咖啡”的支持度为 Support(X→Y)=450/500=90%Support(X→Y)=450/500=90%“茶叶→→咖啡”的置信度为 Confidence(X→Y)=450/500=90%Confidence(X→Y)=450/500=90%“茶叶→→咖啡”的提升度为 Lift(X→Y)=Confidence(X→Y)P(Y)=90%((450+450)/1000)=90Lift(X→Y)=Confidence(X→Y)P(Y)=90%((450+450)/1000)=90由于提升度 Lift(X→Y)=1Lift(X→Y)=1，表示 XX 与 YY 相互独立，即是否有 XX，对于 YY 的出现无影响。也就是说，是否购买咖啡，与有没有购买茶叶无关联。即规则“茶叶→→咖啡”不成立，或者说关联性很小，几乎没有，虽然它的支持度和置信度都高达90%，但它不是一条有效的关联规则。 满足最小支持度和最小置信度的规则，叫做“强关联规则”。然而，强关联规则里，也分有效的强关联规则和无效的强关联规则。 如果Lift(X→Y)&gt;1Lift(X→Y)&gt;1，则规则X→YX→Y是有效的强关联规则。 如果Lift(X→Y)&lt;=1Lift(X→Y)&lt;=1，则规则 X→YX→Y是无效的强关联规则。 特别地，如果Lift(X→Y)=1Lift(X→Y)=1，则表示 XX 与 YY 相互独立。]]></content>
+      <tags>
+        <tag>Apriori</tag>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Markdown语法入门]]></title>
     <url>%2Funcategorized%2F2018%2F05%2F09%2FMarkdown%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8.html</url>
     <content type="text"><![CDATA[## ## ##]]></content>
