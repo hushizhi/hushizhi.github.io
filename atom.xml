@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hushizhi.github.io/"/>
-  <updated>2018-06-04T06:46:52.000Z</updated>
+  <updated>2018-06-04T06:50:12.000Z</updated>
   <id>https://hushizhi.github.io/</id>
   
   <author>
@@ -21,15 +21,16 @@
     <link href="https://hushizhi.github.io/uncategorized/2018/06/04/%E5%96%84%E8%89%AF%E7%9A%84%E5%8A%9B%E5%BA%A6.html"/>
     <id>https://hushizhi.github.io/uncategorized/2018/06/04/善良的力度.html</id>
     <published>2018-06-04T06:35:39.000Z</published>
-    <updated>2018-06-04T06:46:52.000Z</updated>
+    <updated>2018-06-04T06:50:12.000Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><pre><code>一对夫妻很幸运地订到了火车票，上车后却发现有位女士坐在她们的位子上，先生示意太太坐在她旁边的位子上，却没有请那位女士让位。太太坐定后仔细一看，发现哪位女士右脚有点不方便，才了解先生为何不请她起来。他就这样从嘉义一直站到台北。下了车之后，心疼先生的太太就说：“让位是善行，但从嘉义到台北这么久，中途大可请她把位子还给你，换你坐一下。”先生却说：“人家不方便一辈子，我们就不方便这3小时而已。”太太听了相当感动，觉得世界都变得温柔很多。“人家不方便一辈子，我们就不方便3小时而已。”多浩荡大气、慈悲善美的一句话，它能将善念传导给别人，影响周遭的环境氛围，让世界变得善美、圆满。</code></pre><hr>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>一对夫妻很幸运地订到了火车票，上车后却发现有位女士坐在她们的位子上，先生示意太太坐在她旁边的位子上，却没有请那位女士让位。太太坐定后仔细一看，发现哪位女士右脚有点不方便，才了解先生为何不请她起来。他就这样从嘉义一直站到台北。<br>下了车之后，心疼先生的太太就说：“让位是善行，但从嘉义到台北这么久，中途大可请她把位子还给你，换你坐一下。”<br>先生却说：“人家不方便一辈子，我们就不方便这3小时而已。”太太听了相当感动，觉得世界都变得温柔很多。<br>“人家不方便一辈子，我们就不方便3小时而已。”多浩荡大气、慈悲善美的一句话，它能将善念传导给别人，影响周遭的环境氛围，让世界变得善美、圆满。</p>]]></content>
     
     <summary type="html">
     
-      &lt;p class=&quot;description&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;一对夫妻很幸运地订到了火车票，上车后却发现有位女士坐在她们的位子上，先生示意太太坐在她旁边的位子上，却没有请那位女士让位。太太坐定后仔细一看，发现哪位女士右脚有点不方便，才了
+      
     
     </summary>
     
@@ -41,7 +42,7 @@
     <link href="https://hushizhi.github.io/uncategorized/2018/05/18/%E6%94%AF%E6%8C%81%E5%BA%A6%EF%BC%8C%E6%8F%90%E5%8D%87%E5%BA%A6%EF%BC%8C%E7%BD%AE%E4%BF%A1%E5%BA%A6.html"/>
     <id>https://hushizhi.github.io/uncategorized/2018/05/18/支持度，提升度，置信度.html</id>
     <published>2018-05-18T01:15:16.000Z</published>
-    <updated>2018-05-18T01:16:02.000Z</updated>
+    <updated>2018-06-04T06:50:09.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><p>Reference：关联分析中的支持度、置信度和提升度</p><p>1.支持度（Support）<br>支持度表示项集 (X,Y)(X,Y) 在总项集里出现的概率。公式为：</p><p>Support(X→Y)=P(X,Y)P(I)=P(X∪Y)P(I)=num(X∪Y)num(I)<br>Support(X→Y)=P(X,Y)P(I)=P(X∪Y)P(I)=num(X∪Y)num(I)<br>其中，num(I)num(I) 表示总事务集的个数， num(X∪Y)num(X∪Y) 表示含有 {X,Y}{X,Y} 的事务集的个数（个数也叫次数）。</p><p>2.置信度（Confidence）<br>置信度表示在先决条件X发生的情况下，由关联规则 X→YX→Y 推出 YY 的概率。即在含有 XX 的项集中，含有 YY 的可能性，公式为：</p><p>Confidence(X→Y)=P(Y|X)=P(X,Y)P(X)=P(X∪Y)P(X)<br>Confidence(X→Y)=P(Y|X)=P(X,Y)P(X)=P(X∪Y)P(X)<br>3.提升度（Lift）<br>提升度表示含有 XX 的条件下，同时含有 YY 的概率，与不含 XX 的条件下却含 YY 的概率之比。</p><p>Lift(X→Y)=P(Y|X)P(Y)<br>Lift(X→Y)=P(Y|X)P(Y)<br>例1，已知有1000名顾客买年货，分为甲乙两组，每组各500人，其中甲组有500人买了茶叶，同时又有450人买了咖啡；乙组有450人买了咖啡.</p><p>试求解</p><p>1）“茶叶→→咖啡”的支持度</p><p>2）“茶叶→→咖啡”的置信度</p><p>3）“茶叶→→咖啡”的提升度</p><p>分析：</p><p>设 X={买茶叶}X={买茶叶} ，Y={买咖啡}Y={买咖啡}，则规则 “茶叶→→咖啡” 表示 “即买了茶叶，又买了咖啡”，于是，“茶叶→→咖啡”的支持度为</p><p>Support(X→Y)=450/500=90%Support(X→Y)=450/500=90%<br>“茶叶→→咖啡”的置信度为</p><p>Confidence(X→Y)=450/500=90%Confidence(X→Y)=450/500=90%<br>“茶叶→→咖啡”的提升度为</p><p>Lift(X→Y)=Confidence(X→Y)P(Y)=90%((450+450)/1000)=90Lift(X→Y)=Confidence(X→Y)P(Y)=90%((450+450)/1000)=90<br>由于提升度 Lift(X→Y)=1Lift(X→Y)=1，表示 XX 与 YY 相互独立，即是否有 XX，对于 YY 的出现无影响。也就是说，是否购买咖啡，与有没有购买茶叶无关联。即规则“茶叶→→咖啡”不成立，或者说关联性很小，几乎没有，虽然它的支持度和置信度都高达90%，但它不是一条有效的关联规则。</p><p>满足最小支持度和最小置信度的规则，叫做“强关联规则”。然而，强关联规则里，也分有效的强关联规则和无效的强关联规则。</p><p>如果Lift(X→Y)&gt;1Lift(X→Y)&gt;1，则规则X→YX→Y是有效的强关联规则。</p><p>如果Lift(X→Y)&lt;=1Lift(X→Y)&lt;=1，则规则 X→YX→Y是无效的强关联规则。</p><p>特别地，如果Lift(X→Y)=1Lift(X→Y)=1，则表示 XX 与 YY 相互独立。</p><hr>]]></content>
     
