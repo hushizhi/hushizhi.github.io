@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hushizhi.github.io/"/>
-  <updated>2018-06-04T06:50:12.000Z</updated>
+  <updated>2018-12-01T15:32:58.000Z</updated>
   <id>https://hushizhi.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>编程范式思维</title>
+    <link href="https://hushizhi.github.io/uncategorized/2018/12/01/%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%80%9D%E7%BB%B4.html"/>
+    <id>https://hushizhi.github.io/uncategorized/2018/12/01/编程范式思维.html</id>
+    <published>2018-12-01T15:31:04.000Z</published>
+    <updated>2018-12-01T15:32:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p>程序设计又一个范式问题：就是组织程序的基本思想。它反映了程序设计者对程序的一个基本的哲学观，也就是说，他认为程序的本质是什么，他认为一个大的程序是由什么组成的。</p><p>范式目前有三种：过程范式、函数范式、对象范式。</p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><ol><li>过程范式认为，程序是由一个个过程经过顺序、选择和循环的结构组合而成。反映在现实世界，过程范式体现了劳动分工之前“大包大揽”的工作特点—能胜任所有事情，拥有所有的资源，高度集中在这个“人”身上，只不过具体的事情得一步步地有顺序来处理。</li><li>对象范式反映了劳动分工之后的团队协作的工作特点–每个人各司其职，各有所长，各自拥有私有资源，工件和信息彼此传递，最后完成工作。因此，对象范式也就形成了自己对程序的看法—程序是由一组对象组成，这些对象各有所能，通过消息传递实现协作。</li></ol><p>后者较前者具有3个优势：</p><ol><li>由于实现了逻辑分工，降低了大规模程序的开发难度。</li><li>灵活性更好–若干对象在一起，可以灵活组合，可以以不同的方式协作，完成不同的任务，也可以灵活的替换和升级。</li><li>对象范式更加适合图形化、网络化、消息驱动的现代计算环境。</li></ol><p>对象范式的两大基本观念：</p><ul><li>程序是由对象组成的。</li><li>对象之间互相发送消息，协作完成任务。</li></ul><p>为了方便对象的构造，引入了类、继承等概念。 smalltalk构造了更灵活和纯粹的消息发送机制。</p><p>它实现了一个与目标对象无关的消息发机制，不管那个对象是谁，也不管他是不是能正确的处理一个消息，作为发送消息的对象来说，可以毫无顾忌的抓住一个对象就发送消息过去。接到消息的对象，要尝试理解这个消息，并最后调用自己的处理过程来处理消息。如果这个消息能被处理，那个对象自然会处理，如果不能处理，Smalltalk系统会向消息的发送者回传一个doesNotUnderstand消息，予以通知。对象不用关心消息是如何传递格给一个对象的，传递过程被分离出来（而不是向Simula那样明确地以成员函数调用的方式实现），可以是在内存中复制，也可以是进程间通讯。到了Smalktalk-80，消息传递甚至可以跨越网络。</p><p>不妨把源自Smalktalk的消息机制称为“动态消息机制”。</p><p>把源自Simula的消息机制称为“静态消息机制”。</p><p>对于消息转发机制的不同选择，主要是因为用途。Simula用于仿真程序开发，smalltalk用于图形界面环境构建。</p><p>到了1980年代，C出现了。Bjarne Stroustrup在博士期间深入研究Simula，于是在C语言基础上，几乎把Simula思想照搬过来，形成了最初的C。 大约在同期，Brad Cox根据Smalltalk的思想设计了Objective-C，可是由于其语法怪异，没有流行起来。只有Steve Jobs这种具有禅宗美学鉴赏力的世外高人，于1988年把Objective-C的团队和产品一口气买了下来。</p><p>##</p><p>##</p><p>##</p><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p class=&quot;description&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;程序设计又一个范式问题：就是组织程序的基本思想。它反映了程序设计者对程序的一个基本的哲学观，也就是说，他认为程序的本质是什么，他认为一个大的程序是由什么组成的。&lt;/p&gt;
+&lt;p&gt;范式目前有三种：过程范式、函数范式、对象范式。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="编程思考" scheme="https://hushizhi.github.io/tags/%E7%BC%96%E7%A8%8B%E6%80%9D%E8%80%83/"/>
+    
+  </entry>
   
   <entry>
     <title>善良的力度</title>
@@ -86,7 +110,7 @@
     <link href="https://hushizhi.github.io/uncategorized/2018/05/09/%E6%AF%95%E4%B8%9A%E5%AD%A3%E5%89%8D50%E5%A4%A9.html"/>
     <id>https://hushizhi.github.io/uncategorized/2018/05/09/毕业季前50天.html</id>
     <published>2018-05-09T15:10:41.000Z</published>
-    <updated>2018-05-09T15:54:25.000Z</updated>
+    <updated>2018-12-01T15:27:21.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"http://p8gu1ztx5.bkt.clouddn.com/Beyond%20-%20%E3%80%8A%E6%9B%BE%E6%98%AF%E6%8B%A5%E6%9C%89%E3%80%8B.mp4","pic":"http://p8gu1ztx5.bkt.clouddn.com/beyond.jpeg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><p>致谢<br>   时光飞逝，岁月如梭。论文行文至此，四年本科大学时光匆匆如雨夜前的行人，突觉不舍与伤感。眺望往日，与三五同学篮球场挥舞汗水的身姿，挤在同一个实验室敲打键盘讨论学习的年少轻狂，欢声畅聊的东门小吃街对酒当歌，一幕幕恍如昨天，涌上心头。二十年的求学路，一路走来，一路含泪挥手离家，一路风尘仆仆归去，父母亲的白发如脑中所习得的油墨，渐行渐长；百感交集的此刻，更多是对过往沿途的怀恋，充满着感激，满怀的欣喜与感恩。</p><p><img src="http://p8gu1ztx5.bkt.clouddn.com/image/jpg%E4%B8%8D%E8%83%BD%E8%AF%B4%E7%9A%84%E7%A7%98%E5%AF%86.jpg" alt=""></p><hr>]]></content>
     
