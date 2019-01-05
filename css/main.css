@@ -185,8 +185,8 @@ th {
 }
 body {
   position: relative;
-  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "STHeiti", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
+  font-family: "Microsoft YaHei", Verdana, sans-serif;
+  font-size: 16px;
   line-height: 2;
   color: #555;
   background: #fff;
@@ -216,7 +216,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
-  font-family: 'Roboto Slab', 'Lato', -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "STHeiti", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+  font-family: Georgia, sans;
 }
 h2,
 h3,
@@ -445,11 +445,11 @@ body {
 .header-inner {
   margin: 0 auto;
   padding: 100px 0 70px;
-  width: 700px;
+  width: 900px;
 }
 @media (min-width: 1600px) {
   .container .header-inner {
-    width: 900px;
+    width: 1200px;
   }
 }
 .main {
@@ -457,11 +457,11 @@ body {
 }
 .main-inner {
   margin: 0 auto;
-  width: 700px;
+  width: 900px;
 }
 @media (min-width: 1600px) {
   .container .main-inner {
-    width: 900px;
+    width: 1200px;
   }
 }
 .footer {
@@ -474,11 +474,11 @@ body {
 .footer-inner {
   box-sizing: border-box;
   margin: 20px auto;
-  width: 700px;
+  width: 900px;
 }
 @media (min-width: 1600px) {
   .container .footer-inner {
-    width: 900px;
+    width: 1200px;
   }
 }
 pre,
@@ -493,7 +493,7 @@ pre,
 }
 pre,
 code {
-  font-family: Menlo, Monaco, Consolas, 'Roboto Mono', -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "STHeiti", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", "Droid Sans Fallback", "Microsoft YaHei", monospace;
+  font-family: "Input Mono", "PT Mono", Consolas, Monaco, Menlo, monospace;
 }
 code {
   padding: 2px 4px;
@@ -1283,7 +1283,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: -20px auto 15px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1968,7 +1968,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1bc491;
+  background: #96b861;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2852,7 +2852,7 @@ body {
   padding-bottom: 0px;
 }
 .posts-expand {
-  padding-top: 80px;
+  padding-top: 0px;
 }
 .posts-expand .post-meta {
   margin: 5px 0px 0px 0px;
@@ -2880,11 +2880,11 @@ body {
   border-bottom-color: rgba(161,102,171,0);
 }
 .post {
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 50px;
-  padding: 45px 36px 36px 36px;
-  -webkit-box-shadow: 0 0 14px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 14px rgba(202,203,204,0.5);
+  padding: 25px 25px 25px 25px;
+  -webkit-box-shadow: 0 0 0px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 0px rgba(202,203,204,0.5);
 }
 .posts-expand .post-meta .post-description {
   font-style: italic;
@@ -2897,14 +2897,14 @@ body {
   color: #555 !important;
   background-color: #fff;
   border-radius: 3px;
-  font-size: 15px;
+  font-size: 12px;
   box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.35);
   border: none !important;
   transition-property: unset;
   padding: 0px 15px;
 }
 .posts-expand .post-title {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 700;
 }
 .posts-expand .post-title-link::before {
@@ -2931,7 +2931,7 @@ body {
 .pagination .page-number.current {
   border-radius: 100%;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-  background-color: rgba(255,255,255,0.35);
+  background-color: rgba(80,200,200,0.35);
 }
 .pagination .prev,
 .pagination .next,
@@ -2970,9 +2970,9 @@ body {
   font-weight: bold;
 }
 .comments {
-  background-color: #fff;
+  background-color: #eee;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
-  margin: 80px 0px 40px 0px;
+  margin: 80px 10px 40px 10px;
 }
 a {
   color: #5073b8;
@@ -3166,11 +3166,11 @@ img:hover {
   padding: 0px 10px 5px 10px;
 }
 .posts-collapse {
-  margin: 50px 0px;
+  margin: 20px 0px;
 }
-@media (max-width: 1023px) {
+@media (max-width: 700px) {
   .posts-collapse {
-    margin: 50px 20px;
+    margin: 10px 10px;
   }
 }
 .posts-collapse::after {
@@ -3223,6 +3223,7 @@ img:hover {
   }
 }
 .tag-cloud {
+  margin: -80px 50px 40px 50px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
   background-color: #fff;
   padding: 86px 36px 36px 36px;
@@ -3499,6 +3500,22 @@ code.description {
     border-bottom: none;
     position: relative;
     z-index: 1024;
+  }
+}
+@media (max-width: 767px) {
+  .site-title {
+    font-size: 70px !important;
+    letter-spacing: 0px !important;
+  }
+  .site-subtitle {
+    letter-spacing: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .site-meta {
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+  }
+  .menu .menu-item {
+    margin: 0px 10px !important;
   }
 }
 @-moz-keyframes heartAnimate {
