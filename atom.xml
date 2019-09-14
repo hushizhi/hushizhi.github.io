@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hushizhi.github.io/"/>
-  <updated>2019-09-14T09:39:48.588Z</updated>
+  <updated>2019-09-14T11:30:25.373Z</updated>
   <id>https://hushizhi.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>工程方法 - CI/CD</title>
+    <link href="https://hushizhi.github.io/uncategorized/2019/09/14/CI%E4%B8%8ECD.html"/>
+    <id>https://hushizhi.github.io/uncategorized/2019/09/14/CI与CD.html</id>
+    <published>2019-09-14T11:28:47.000Z</published>
+    <updated>2019-09-14T11:30:25.373Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>在比较小且快速的迭代开发过程中，持续验证系统的开发成果，小步快跑式地尽早确认，期望开发尽可能完全符合原始需求，或者依据产出进行快速修正。</p><p>简单地说，是尽量减少人力手动操作，将一些日常工作交给机器进行自动化处理。如环境配置、单元测试、日志记录、打包部署等。</p><p>一切业务的更替发展必须建立在稳定性的基础上。业务 RD 是平台服务的搭建者，书写出无 bug 的代码是夯实稳定性根基的重要手段。</p><a id="more"></a><p>根据以往经验，开发流程中经常会出现如下问题：</p><ul><li>RD 更为关注的是具体功能实现，往往容易忽略代码质量以及单测的重要性。</li><li>以往 case 中，大概 70% 的线上 bug 都是因为代码质量问题导致。</li><li>单测维护成本较高，存量覆盖耗时费力。</li><li>单测流程不规范，新增逻辑往往忽略单测的维护。</li></ul><h3 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h3><ul><li>降低风险：业务稳定性为核心目标。</li><li>减少人工手动操作的繁琐程序。</li><li>减少逻辑代码千行bug率。</li><li>通过单测提前暴露问题，降低返工率，提高研发效率。</li><li>能随时发版打包出可发布部署的版本。</li></ul><h3 id="What"><a href="#What" class="headerlink" title="What"></a>What</h3><p>持续集成（Continuous Integration）</p><blockquote><p>指开发人员在特定分支（频繁）提交代码后，立即执行构建和单元测试，代码通过测试标准后集成到主干的过程。强调的是分支代码的提交、构建与单元测试，这个过程的产出是单元测试报告。</p></blockquote><h3 id="How"><a href="#How" class="headerlink" title="How"></a>How</h3><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h3&gt;&lt;p&gt;在比较小且快速的迭代开发过程中，持续验证系统的开发成果，小步快跑式地尽早确认，期望开发尽可能完全符合原始需求，或者依据产出进行快速修正。&lt;/p&gt;
+&lt;p&gt;简单地说，是尽量减少人力手动操作，将一些日常工作交给机器进行自动化处理。如环境配置、单元测试、日志记录、打包部署等。&lt;/p&gt;
+&lt;p&gt;一切业务的更替发展必须建立在稳定性的基础上。业务 RD 是平台服务的搭建者，书写出无 bug 的代码是夯实稳定性根基的重要手段。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="持续集成" scheme="https://hushizhi.github.io/tags/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
+    
+  </entry>
   
   <entry>
     <title>ARC 与 MRC</title>
