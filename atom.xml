@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hushizhi.github.io/"/>
-  <updated>2018-12-01T15:36:47.000Z</updated>
+  <updated>2019-07-17T01:27:20.000Z</updated>
   <id>https://hushizhi.github.io/</id>
   
   <author>
@@ -17,13 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>怎么忽略断言NSAssert</title>
+    <link href="https://hushizhi.github.io/uncategorized/2019/07/17/%E6%80%8E%E4%B9%88%E5%BF%BD%E7%95%A5%E6%96%AD%E8%A8%80NSAssert.html"/>
+    <id>https://hushizhi.github.io/uncategorized/2019/07/17/怎么忽略断言NSAssert.html</id>
+    <published>2019-07-17T01:26:27.000Z</published>
+    <updated>2019-07-17T01:27:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="https://" alt style="width:100%"></p><a id="more"></a><p>##</p><p>##</p><p>##</p><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p class=&quot;description&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://&quot; alt style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://hushizhi.github.io/tags/iOS/"/>
+    
+      <category term="Debug" scheme="https://hushizhi.github.io/tags/Debug/"/>
+    
+  </entry>
+  
+  <entry>
     <title>编程范式思维</title>
     <link href="https://hushizhi.github.io/uncategorized/2018/12/01/%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%80%9D%E7%BB%B4.html"/>
     <id>https://hushizhi.github.io/uncategorized/2018/12/01/编程范式思维.html</id>
     <published>2018-12-01T15:31:04.000Z</published>
     <updated>2018-12-01T15:36:47.000Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p>程序设计有一个范式问题：就是组织程序的基本思想。它反映了程序设计者对程序的一个基本的哲学观，也就是说，他认为程序的本质是什么，他认为一个大的程序是由什么组成的。</p><p>范式目前有三种：过程范式、函数范式、对象范式。</p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><ol><li>过程范式认为，程序是由一个个过程经过顺序、选择和循环的结构组合而成。反映在现实世界，过程范式体现了劳动分工之前“大包大揽”的工作特点—能胜任所有事情，拥有所有的资源，高度集中在这个“人”身上，只不过具体的事情得一步步地有顺序来处理。</li><li>对象范式反映了劳动分工之后的团队协作的工作特点–每个人各司其职，各有所长，各自拥有私有资源，工件和信息彼此传递，最后完成工作。因此，对象范式也就形成了自己对程序的看法—程序是由一组对象组成，这些对象各有所能，通过消息传递实现协作。</li></ol><p>后者较前者具有3个优势：</p><ol><li>由于实现了逻辑分工，降低了大规模程序的开发难度。</li><li>灵活性更好–若干对象在一起，可以灵活组合，可以以不同的方式协作，完成不同的任务，也可以灵活的替换和升级。</li><li>对象范式更加适合图形化、网络化、消息驱动的现代计算环境。</li></ol><p>对象范式的两大基本观念：</p><ul><li>程序是由对象组成的。</li><li>对象之间互相发送消息，协作完成任务。</li></ul><p>为了方便对象的构造，引入了类、继承等概念。 smalltalk构造了更灵活和纯粹的消息发送机制。</p><p>它实现了一个与目标对象无关的消息发机制，不管那个对象是谁，也不管他是不是能正确的处理一个消息，作为发送消息的对象来说，可以毫无顾忌的抓住一个对象就发送消息过去。接到消息的对象，要尝试理解这个消息，并最后调用自己的处理过程来处理消息。如果这个消息能被处理，那个对象自然会处理，如果不能处理，Smalltalk系统会向消息的发送者回传一个doesNotUnderstand消息，予以通知。对象不用关心消息是如何传递格给一个对象的，传递过程被分离出来（而不是向Simula那样明确地以成员函数调用的方式实现），可以是在内存中复制，也可以是进程间通讯。到了Smalktalk-80，消息传递甚至可以跨越网络。</p><p>不妨把源自Smalktalk的消息机制称为“动态消息机制”。</p><p>把源自Simula的消息机制称为“静态消息机制”。</p><p>对于消息转发机制的不同选择，主要是因为用途。Simula用于仿真程序开发，smalltalk用于图形界面环境构建。</p><p>到了1980年代，C出现了。Bjarne Stroustrup在博士期间深入研究Simula，于是在C语言基础上，几乎把Simula思想照搬过来，形成了最初的C。 大约在同期，Brad Cox根据Smalltalk的思想设计了Objective-C，可是由于其语法怪异，没有流行起来。只有Steve Jobs这种具有禅宗美学鉴赏力的世外高人，于1988年把Objective-C的团队和产品一口气买了下来。</p><hr>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p>程序设计有一个范式问题：就是组织程序的基本思想。它反映了程序设计者对程序的一个基本的哲学观，也就是说，他认为程序的本质是什么，他认为一个大的程序是由什么组成的。</p><p>范式目前有三种：过程范式、函数范式、对象范式。</p><p><img src="https://" alt style="width:100%"></p><a id="more"></a><ol><li>过程范式认为，程序是由一个个过程经过顺序、选择和循环的结构组合而成。反映在现实世界，过程范式体现了劳动分工之前“大包大揽”的工作特点—能胜任所有事情，拥有所有的资源，高度集中在这个“人”身上，只不过具体的事情得一步步地有顺序来处理。</li><li>对象范式反映了劳动分工之后的团队协作的工作特点–每个人各司其职，各有所长，各自拥有私有资源，工件和信息彼此传递，最后完成工作。因此，对象范式也就形成了自己对程序的看法—程序是由一组对象组成，这些对象各有所能，通过消息传递实现协作。</li></ol><p>后者较前者具有3个优势：</p><ol><li>由于实现了逻辑分工，降低了大规模程序的开发难度。</li><li>灵活性更好–若干对象在一起，可以灵活组合，可以以不同的方式协作，完成不同的任务，也可以灵活的替换和升级。</li><li>对象范式更加适合图形化、网络化、消息驱动的现代计算环境。</li></ol><p>对象范式的两大基本观念：</p><ul><li>程序是由对象组成的。</li><li>对象之间互相发送消息，协作完成任务。</li></ul><p>为了方便对象的构造，引入了类、继承等概念。 smalltalk构造了更灵活和纯粹的消息发送机制。</p><p>它实现了一个与目标对象无关的消息发机制，不管那个对象是谁，也不管他是不是能正确的处理一个消息，作为发送消息的对象来说，可以毫无顾忌的抓住一个对象就发送消息过去。接到消息的对象，要尝试理解这个消息，并最后调用自己的处理过程来处理消息。如果这个消息能被处理，那个对象自然会处理，如果不能处理，Smalltalk系统会向消息的发送者回传一个doesNotUnderstand消息，予以通知。对象不用关心消息是如何传递格给一个对象的，传递过程被分离出来（而不是向Simula那样明确地以成员函数调用的方式实现），可以是在内存中复制，也可以是进程间通讯。到了Smalktalk-80，消息传递甚至可以跨越网络。</p><p>不妨把源自Smalktalk的消息机制称为“动态消息机制”。</p><p>把源自Simula的消息机制称为“静态消息机制”。</p><p>对于消息转发机制的不同选择，主要是因为用途。Simula用于仿真程序开发，smalltalk用于图形界面环境构建。</p><p>到了1980年代，C出现了。Bjarne Stroustrup在博士期间深入研究Simula，于是在C语言基础上，几乎把Simula思想照搬过来，形成了最初的C。 大约在同期，Brad Cox根据Smalltalk的思想设计了Objective-C，可是由于其语法怪异，没有流行起来。只有Steve Jobs这种具有禅宗美学鉴赏力的世外高人，于1988年把Objective-C的团队和产品一口气买了下来。</p><hr>]]></content>
     
     <summary type="html">
     
@@ -31,7 +55,7 @@
 
 &lt;p&gt;程序设计有一个范式问题：就是组织程序的基本思想。它反映了程序设计者对程序的一个基本的哲学观，也就是说，他认为程序的本质是什么，他认为一个大的程序是由什么组成的。&lt;/p&gt;
 &lt;p&gt;范式目前有三种：过程范式、函数范式、对象范式。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://&quot; alt style=&quot;width:100%&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -68,13 +92,13 @@
     <published>2018-05-18T01:15:16.000Z</published>
     <updated>2018-06-04T06:50:09.000Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><p>Reference：关联分析中的支持度、置信度和提升度</p><p>1.支持度（Support）<br>支持度表示项集 (X,Y)(X,Y) 在总项集里出现的概率。公式为：</p><p>Support(X→Y)=P(X,Y)P(I)=P(X∪Y)P(I)=num(X∪Y)num(I)<br>Support(X→Y)=P(X,Y)P(I)=P(X∪Y)P(I)=num(X∪Y)num(I)<br>其中，num(I)num(I) 表示总事务集的个数， num(X∪Y)num(X∪Y) 表示含有 {X,Y}{X,Y} 的事务集的个数（个数也叫次数）。</p><p>2.置信度（Confidence）<br>置信度表示在先决条件X发生的情况下，由关联规则 X→YX→Y 推出 YY 的概率。即在含有 XX 的项集中，含有 YY 的可能性，公式为：</p><p>Confidence(X→Y)=P(Y|X)=P(X,Y)P(X)=P(X∪Y)P(X)<br>Confidence(X→Y)=P(Y|X)=P(X,Y)P(X)=P(X∪Y)P(X)<br>3.提升度（Lift）<br>提升度表示含有 XX 的条件下，同时含有 YY 的概率，与不含 XX 的条件下却含 YY 的概率之比。</p><p>Lift(X→Y)=P(Y|X)P(Y)<br>Lift(X→Y)=P(Y|X)P(Y)<br>例1，已知有1000名顾客买年货，分为甲乙两组，每组各500人，其中甲组有500人买了茶叶，同时又有450人买了咖啡；乙组有450人买了咖啡.</p><p>试求解</p><p>1）“茶叶→→咖啡”的支持度</p><p>2）“茶叶→→咖啡”的置信度</p><p>3）“茶叶→→咖啡”的提升度</p><p>分析：</p><p>设 X={买茶叶}X={买茶叶} ，Y={买咖啡}Y={买咖啡}，则规则 “茶叶→→咖啡” 表示 “即买了茶叶，又买了咖啡”，于是，“茶叶→→咖啡”的支持度为</p><p>Support(X→Y)=450/500=90%Support(X→Y)=450/500=90%<br>“茶叶→→咖啡”的置信度为</p><p>Confidence(X→Y)=450/500=90%Confidence(X→Y)=450/500=90%<br>“茶叶→→咖啡”的提升度为</p><p>Lift(X→Y)=Confidence(X→Y)P(Y)=90%((450+450)/1000)=90Lift(X→Y)=Confidence(X→Y)P(Y)=90%((450+450)/1000)=90<br>由于提升度 Lift(X→Y)=1Lift(X→Y)=1，表示 XX 与 YY 相互独立，即是否有 XX，对于 YY 的出现无影响。也就是说，是否购买咖啡，与有没有购买茶叶无关联。即规则“茶叶→→咖啡”不成立，或者说关联性很小，几乎没有，虽然它的支持度和置信度都高达90%，但它不是一条有效的关联规则。</p><p>满足最小支持度和最小置信度的规则，叫做“强关联规则”。然而，强关联规则里，也分有效的强关联规则和无效的强关联规则。</p><p>如果Lift(X→Y)&gt;1Lift(X→Y)&gt;1，则规则X→YX→Y是有效的强关联规则。</p><p>如果Lift(X→Y)&lt;=1Lift(X→Y)&lt;=1，则规则 X→YX→Y是无效的强关联规则。</p><p>特别地，如果Lift(X→Y)=1Lift(X→Y)=1，则表示 XX 与 YY 相互独立。</p><hr>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="https://" alt style="width:100%"></p><a id="more"></a><p>Reference：关联分析中的支持度、置信度和提升度</p><p>1.支持度（Support）<br>支持度表示项集 (X,Y)(X,Y) 在总项集里出现的概率。公式为：</p><p>Support(X→Y)=P(X,Y)P(I)=P(X∪Y)P(I)=num(X∪Y)num(I)<br>Support(X→Y)=P(X,Y)P(I)=P(X∪Y)P(I)=num(X∪Y)num(I)<br>其中，num(I)num(I) 表示总事务集的个数， num(X∪Y)num(X∪Y) 表示含有 {X,Y}{X,Y} 的事务集的个数（个数也叫次数）。</p><p>2.置信度（Confidence）<br>置信度表示在先决条件X发生的情况下，由关联规则 X→YX→Y 推出 YY 的概率。即在含有 XX 的项集中，含有 YY 的可能性，公式为：</p><p>Confidence(X→Y)=P(Y|X)=P(X,Y)P(X)=P(X∪Y)P(X)<br>Confidence(X→Y)=P(Y|X)=P(X,Y)P(X)=P(X∪Y)P(X)<br>3.提升度（Lift）<br>提升度表示含有 XX 的条件下，同时含有 YY 的概率，与不含 XX 的条件下却含 YY 的概率之比。</p><p>Lift(X→Y)=P(Y|X)P(Y)<br>Lift(X→Y)=P(Y|X)P(Y)<br>例1，已知有1000名顾客买年货，分为甲乙两组，每组各500人，其中甲组有500人买了茶叶，同时又有450人买了咖啡；乙组有450人买了咖啡.</p><p>试求解</p><p>1）“茶叶→→咖啡”的支持度</p><p>2）“茶叶→→咖啡”的置信度</p><p>3）“茶叶→→咖啡”的提升度</p><p>分析：</p><p>设 X={买茶叶}X={买茶叶} ，Y={买咖啡}Y={买咖啡}，则规则 “茶叶→→咖啡” 表示 “即买了茶叶，又买了咖啡”，于是，“茶叶→→咖啡”的支持度为</p><p>Support(X→Y)=450/500=90%Support(X→Y)=450/500=90%<br>“茶叶→→咖啡”的置信度为</p><p>Confidence(X→Y)=450/500=90%Confidence(X→Y)=450/500=90%<br>“茶叶→→咖啡”的提升度为</p><p>Lift(X→Y)=Confidence(X→Y)P(Y)=90%((450+450)/1000)=90Lift(X→Y)=Confidence(X→Y)P(Y)=90%((450+450)/1000)=90<br>由于提升度 Lift(X→Y)=1Lift(X→Y)=1，表示 XX 与 YY 相互独立，即是否有 XX，对于 YY 的出现无影响。也就是说，是否购买咖啡，与有没有购买茶叶无关联。即规则“茶叶→→咖啡”不成立，或者说关联性很小，几乎没有，虽然它的支持度和置信度都高达90%，但它不是一条有效的关联规则。</p><p>满足最小支持度和最小置信度的规则，叫做“强关联规则”。然而，强关联规则里，也分有效的强关联规则和无效的强关联规则。</p><p>如果Lift(X→Y)&gt;1Lift(X→Y)&gt;1，则规则X→YX→Y是有效的强关联规则。</p><p>如果Lift(X→Y)&lt;=1Lift(X→Y)&lt;=1，则规则 X→YX→Y是无效的强关联规则。</p><p>特别地，如果Lift(X→Y)=1Lift(X→Y)=1，则表示 XX 与 YY 相互独立。</p><hr>]]></content>
     
     <summary type="html">
     
       &lt;p class=&quot;description&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://&quot; alt style=&quot;width:100%&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -92,13 +116,13 @@
     <published>2018-05-09T15:55:32.000Z</published>
     <updated>2018-12-01T15:09:24.000Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><p>##</p><p>##</p><p>##</p><hr>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="https://" alt style="width:100%"></p><a id="more"></a><p>##</p><p>##</p><p>##</p><hr>]]></content>
     
     <summary type="html">
     
       &lt;p class=&quot;description&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://&quot; alt style=&quot;width:100%&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -112,13 +136,13 @@
     <published>2018-05-09T15:10:41.000Z</published>
     <updated>2018-12-01T15:27:21.000Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"http://p8gu1ztx5.bkt.clouddn.com/Beyond%20-%20%E3%80%8A%E6%9B%BE%E6%98%AF%E6%8B%A5%E6%9C%89%E3%80%8B.mp4","pic":"http://p8gu1ztx5.bkt.clouddn.com/beyond.jpeg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><p>致谢<br>   时光飞逝，岁月如梭。论文行文至此，四年本科大学时光匆匆如雨夜前的行人，突觉不舍与伤感。眺望往日，与三五同学篮球场挥舞汗水的身姿，挤在同一个实验室敲打键盘讨论学习的年少轻狂，欢声畅聊的东门小吃街对酒当歌，一幕幕恍如昨天，涌上心头。二十年的求学路，一路走来，一路含泪挥手离家，一路风尘仆仆归去，父母亲的白发如脑中所习得的油墨，渐行渐长；百感交集的此刻，更多是对过往沿途的怀恋，充满着感激，满怀的欣喜与感恩。</p><p><img src="http://p8gu1ztx5.bkt.clouddn.com/image/jpg%E4%B8%8D%E8%83%BD%E8%AF%B4%E7%9A%84%E7%A7%98%E5%AF%86.jpg" alt=""></p><hr>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="https://" alt style="width:100%"></p><a id="more"></a><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"http://p8gu1ztx5.bkt.clouddn.com/Beyond%20-%20%E3%80%8A%E6%9B%BE%E6%98%AF%E6%8B%A5%E6%9C%89%E3%80%8B.mp4","pic":"http://p8gu1ztx5.bkt.clouddn.com/beyond.jpeg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><p>致谢<br>   时光飞逝，岁月如梭。论文行文至此，四年本科大学时光匆匆如雨夜前的行人，突觉不舍与伤感。眺望往日，与三五同学篮球场挥舞汗水的身姿，挤在同一个实验室敲打键盘讨论学习的年少轻狂，欢声畅聊的东门小吃街对酒当歌，一幕幕恍如昨天，涌上心头。二十年的求学路，一路走来，一路含泪挥手离家，一路风尘仆仆归去，父母亲的白发如脑中所习得的油墨，渐行渐长；百感交集的此刻，更多是对过往沿途的怀恋，充满着感激，满怀的欣喜与感恩。</p><p><img src="http://p8gu1ztx5.bkt.clouddn.com/image/jpg%E4%B8%8D%E8%83%BD%E8%AF%B4%E7%9A%84%E7%A7%98%E5%AF%86.jpg" alt></p><hr>]]></content>
     
     <summary type="html">
     
       &lt;p class=&quot;description&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://&quot; alt style=&quot;width:100%&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -130,6 +154,24 @@
       <category term="杂记" scheme="https://hushizhi.github.io/tags/%E6%9D%82%E8%AE%B0/"/>
     
       <category term="beyond" scheme="https://hushizhi.github.io/tags/beyond/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://hushizhi.github.io/uncategorized/2018/05/05/hello-world.html"/>
+    <id>https://hushizhi.github.io/uncategorized/2018/05/05/hello-world.html</id>
+    <published>2018-05-05T07:27:08.000Z</published>
+    <updated>2018-05-05T07:27:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a> <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+    
+    </summary>
+    
     
   </entry>
   
@@ -177,7 +219,7 @@
     <published>2018-03-17T07:13:48.000Z</published>
     <updated>2018-05-05T07:26:52.000Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>一． 位操作基础<br>基本的位操作符有与、或、异或、取反、左移、右移这6种，它们的运算规则如下所示：</p><p>&amp;  与   两个位都为1时，结果才为1</p><p>|  或   两个位都为0时，结果才为0</p><p>^  异或  两个位相同为0，相异为1</p><p>~  取反  0变1，1变0</p><a id="more"></a> <p>&lt;&lt; 左移  各二进位全部左移若干位，高位丢弃，低位补0</p><blockquote><blockquote><p>右移  各二进位全部右移若干位，对无符号数，高位补0，有符号数，各编译器处理方法不一样，有的补符号位（算术右移），有的补0（逻辑右移）</p></blockquote></blockquote><p>注意以下几点：</p><p>1．  在这6种操作符，只有~取反是单目操作符，其它5种都是双目操作符。</p><p>2．  位操作只能用于整形数据，对float和double类型进行位操作会被编译器报错。</p><p>3．  对于移位操作，比如15 = 0000 1111(二进制)，右移二位，最高位由符号位填充将得到0000 0011即3。<br>                  -15 = 1111 0001(二进制)，右移二位，最高位由符号位填充将得到1111 1100即-4。</p><p>4．  位操作符的运算优先级比较低，因为尽量使用括号来确保运算顺序。<br>比如要得到像1，3，5，9这些2^i+1的数字。写成int a = 1 &lt;&lt; i + 1;是不对的，程序会先执行i + 1，再执行左移操作。应该写成int a = (1 &lt;&lt; i) + 1;</p><p>5．  另外位操作还有一些复合操作符，如&amp;=、|=、 ^=、&lt;&lt;=、&gt;&gt;=。</p><p>二． 常用位操作小技巧<br>下面对位操作的一些常见应用作个总结，有判断奇偶、交换两数、变换符号及求绝对值。这些小技巧应用易记，应当熟练掌握。</p><p>1．判断奇偶<br>只要根据最未位是0还是1来决定，为0就是偶数，为1就是奇数。<br>因此可以用if ((a &amp; 1) == 0)代替if (a % 2 == 0)来判断a是不是偶数。</p><p>下面程序将输出0到100之间的所有奇数。<br>for (i = 0; i &lt; 100; ++i)<br>    if (i &amp; 1)<br>        printf(“%d “, i);<br>putchar(‘\n’);  </p><p>2．交换两数<br>一般的写法是：<br>void Swap(int &amp;a, int &amp;b)<br>{<br>    if (a != b)<br>    {<br>        int c = a;<br>        a = b;<br>        b = c;<br>    }<br>}<br>可以用位操作来实现交换两数而不用第三方变量：<br>void Swap(int &amp;a, int &amp;b)<br>{<br>    if (a != b)<br>    {<br>        a ^= b;<br>        b ^= a;<br>        a ^= b;<br>    }<br>}<br>可以这样理解：</p><p>第一步  a^=b 即a=(a^b);</p><p>第二步  b^=a 即b=b^(a^b)，由于^运算满足交换律，b^(a^b)=b^b^a。由于一个数和自己异或的结果为0并且任何数与0异或都会不变的，所以此时b被赋上了a的值。</p><p>第三步 a^=b 就是a=a^b，由于前面二步可知a=(a^b)，b=a，所以a=a^b即a=(a^b)^a。故a会被赋上b的值。</p><p>再来个实例说明下以加深印象。int a = 13, b = 6;</p><p>a的二进制为 13=8+4+1=1101(二进制)</p><p>b的二进制为 6=4+2=110(二进制)</p><p>第一步 a^=b  a = 1101 ^ 110 = 1011;</p><p>第二步 b^=a  b = 110 ^ 1011 = 1101;即b=13</p><p>第三步 a^=b  a = 1011 ^ 1101 = 110;即a=6</p><p>3．变换符号<br>变换符号就是正数变成负数，负数变成正数。</p><p>如对于-11和11，可以通过下面的变换方法将-11变成11</p><pre><code>1111 0101(二进制) –取反-&gt; 0000 1010(二进制) –加1-&gt; 0000 1011(二进制)</code></pre><p>同样可以这样的将11变成-11</p><pre><code>0000 1011(二进制) –取反-&gt; 0000 0100(二进制) –加1-&gt; 1111 0101(二进制)</code></pre><p>因此变换符号只需要取反后加1即可。完整代码如下：   </p><p>#include <stdio.h><br>int SignReversal(int a)<br>{<br>    return ~a + 1;<br>}<br>int main()<br>{<br>    printf(“对整数变换符号 — by More  —\n\n”);<br>    int a = 7, b = -12345;<br>    printf(“%d  %d\n”, SignReversal(a), SignReversal(b));<br>    return 0;<br>}<br>4．求绝对值<br>位操作也可以用来求绝对值，对于负数可以通过对其取反后加1来得到正数。对-6可以这样：</stdio.h></p><pre><code>1111 1010(二进制) –取反-&gt;0000 0101(二进制) -加1-&gt; 0000 0110(二进制)</code></pre><p>来得到6。</p><p>因此先移位来取符号位，int i = a &gt;&gt; 31;要注意如果a为正数，i等于0，为负数，i等于-1。然后对i进行判断——如果i等于0，直接返回。否之，返回~a+1。完整代码如下：</p><p>int my_abs(int a)<br>{<br>    int i = a &gt;&gt; 31;<br>    return i == 0 ? a : (~a + 1);<br>}<br>现在再分析下。对于任何数，与0异或都会保持不变，与-1即0xFFFFFFFF异或就相当于取反。因此，a与i异或后再减i（因为i为0或-1，所以减i即是要么加0要么加1）也可以得到绝对值。所以可以对上面代码优化下：</p><p>int my<em>abs(int a)<br>{<br>    int i = a &gt;&gt; 31;<br>    return ((a ^ i) - i);<br>}<br>注意这种方法没用任何判断表达式，而且有些笔面试题就要求这样做，因此建议读者记住该方法（^</em>^讲解过后应该是比较好记了）。</p><p>注1．int类型一般占4字节，32位。因此15准确表达为</p><p>15=00000000 00000000 00000000 00001111(二进制)</p><p>-15准确表达为</p><p>-15=11111111 11111111 11111111 11110001(二进制)</p><p>为了简便起见，文章中使用15=00001111(二进制)，-15=11110001(二进制)。</p><p>应用．  二进制中1的个数</p><p>统计二进制中1的个数可以直接移位再判断，当然像《编程之美》书中用循环移位计数或先打一个表再计算都可以。本文详细讲解一种高效的方法。以34520为例，可以通过下面四步来计算其二进制中1的个数二进制中1的个数。</p><p>第一步：每2位为一组，组内高低位相加</p><pre><code>10 00 01 10  11 01 10 00</code></pre><p>  –&gt;01 00 01 01  10 01 01 00</p><p>第二步：每4位为一组，组内高低位相加</p><pre><code>0100 0101 1001 0100</code></pre><p>  –&gt;0001 0010 0011 0001</p><p>第三步：每8位为一组，组内高低位相加</p><pre><code>00010010 00110001</code></pre><p>  –&gt;00000011 00000100</p><p>第四步：每16位为一组，组内高低位相加</p><pre><code>00000011 00000100</code></pre><p>  –&gt;00000000 00000111</p><p>这样最后得到的00000000 00000111即7即34520二进制中1的个数。类似上文中对二进制逆序的做法不难实现第一步的代码：</p><pre><code>x = ((x &amp; 0xAAAA) &gt;&gt; 1) + (x &amp; 0x5555);</code></pre><p>好的，有了第一步，后面几步就请读者完成下吧，先动动笔再看下面的完整代码：</p><p>#include <stdio.h><br>template <class t=""><br>void PrintfBinary(T a)<br>{<br>    int i;<br>    for (i = sizeof(a) * 8 - 1; i &gt;= 0; –i)<br>    {<br>        if ((a &gt;&gt; i) &amp; 1)<br>            putchar(‘1’);<br>        else<br>            putchar(‘0’);<br>        if (i == 8)<br>            putchar(‘ ‘);<br>    }<br>    putchar(‘\n’);<br>}<br>int main()<br>{<br>    printf(“二进制中1的个数 — by MoreWindows( <a href="http://blog.csdn.net/MoreWindows" target="_blank" rel="noopener">http://blog.csdn.net/MoreWindows</a> )  —\n\n”);  </class></stdio.h></p><pre><code>unsigned short a = 34520;  printf(&quot;原数    %6d的二进制为:  &quot;, a);  PrintfBinary(a);  a = ((a &amp; 0xAAAA) &gt;&gt; 1) + (a &amp; 0x5555);  a = ((a &amp; 0xCCCC) &gt;&gt; 2) + (a &amp; 0x3333);  a = ((a &amp; 0xF0F0) &gt;&gt; 4) + (a &amp; 0x0F0F);  a = ((a &amp; 0xFF00) &gt;&gt; 8) + (a &amp; 0x00FF);     printf(&quot;计算结果%6d的二进制为:  &quot;, a);     PrintfBinary(a);  return 0;  </code></pre><p>}<br>运行结果如下：</p><p>可以发现巧妙运用分组处理确实是解决很多二进制问题的灵丹妙药。</p><p>转载自：<a href="http://blog.csdn.net/morewindows/article/details/7354571" target="_blank" rel="noopener">http://blog.csdn.net/morewindows/article/details/7354571</a><br>感谢原作者</p>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>一． 位操作基础<br>基本的位操作符有与、或、异或、取反、左移、右移这6种，它们的运算规则如下所示：</p><p>&amp;  与   两个位都为1时，结果才为1</p><p>|  或   两个位都为0时，结果才为0</p><p>^  异或  两个位相同为0，相异为1</p><p>~  取反  0变1，1变0</p><a id="more"></a> <p>&lt;&lt; 左移  各二进位全部左移若干位，高位丢弃，低位补0</p><blockquote><blockquote><p>右移  各二进位全部右移若干位，对无符号数，高位补0，有符号数，各编译器处理方法不一样，有的补符号位（算术右移），有的补0（逻辑右移）</p></blockquote></blockquote><p>注意以下几点：</p><p>1．  在这6种操作符，只有~取反是单目操作符，其它5种都是双目操作符。</p><p>2．  位操作只能用于整形数据，对float和double类型进行位操作会被编译器报错。</p><p>3．  对于移位操作，比如15 = 0000 1111(二进制)，右移二位，最高位由符号位填充将得到0000 0011即3。<br>                  -15 = 1111 0001(二进制)，右移二位，最高位由符号位填充将得到1111 1100即-4。</p><p>4．  位操作符的运算优先级比较低，因为尽量使用括号来确保运算顺序。<br>比如要得到像1，3，5，9这些2^i+1的数字。写成int a = 1 &lt;&lt; i + 1;是不对的，程序会先执行i + 1，再执行左移操作。应该写成int a = (1 &lt;&lt; i) + 1;</p><p>5．  另外位操作还有一些复合操作符，如&amp;=、|=、 ^=、&lt;&lt;=、&gt;&gt;=。</p><p>二． 常用位操作小技巧<br>下面对位操作的一些常见应用作个总结，有判断奇偶、交换两数、变换符号及求绝对值。这些小技巧应用易记，应当熟练掌握。</p><p>1．判断奇偶<br>只要根据最未位是0还是1来决定，为0就是偶数，为1就是奇数。<br>因此可以用if ((a &amp; 1) == 0)代替if (a % 2 == 0)来判断a是不是偶数。</p><p>下面程序将输出0到100之间的所有奇数。<br>for (i = 0; i &lt; 100; ++i)<br>    if (i &amp; 1)<br>        printf(“%d “, i);<br>putchar(‘\n’);  </p><p>2．交换两数<br>一般的写法是：<br>void Swap(int &amp;a, int &amp;b)<br>{<br>    if (a != b)<br>    {<br>        int c = a;<br>        a = b;<br>        b = c;<br>    }<br>}<br>可以用位操作来实现交换两数而不用第三方变量：<br>void Swap(int &amp;a, int &amp;b)<br>{<br>    if (a != b)<br>    {<br>        a ^= b;<br>        b ^= a;<br>        a ^= b;<br>    }<br>}<br>可以这样理解：</p><p>第一步  a^=b 即a=(a^b);</p><p>第二步  b^=a 即b=b^(a^b)，由于^运算满足交换律，b^(a^b)=b^b^a。由于一个数和自己异或的结果为0并且任何数与0异或都会不变的，所以此时b被赋上了a的值。</p><p>第三步 a^=b 就是a=a^b，由于前面二步可知a=(a^b)，b=a，所以a=a^b即a=(a^b)^a。故a会被赋上b的值。</p><p>再来个实例说明下以加深印象。int a = 13, b = 6;</p><p>a的二进制为 13=8+4+1=1101(二进制)</p><p>b的二进制为 6=4+2=110(二进制)</p><p>第一步 a^=b  a = 1101 ^ 110 = 1011;</p><p>第二步 b^=a  b = 110 ^ 1011 = 1101;即b=13</p><p>第三步 a^=b  a = 1011 ^ 1101 = 110;即a=6</p><p>3．变换符号<br>变换符号就是正数变成负数，负数变成正数。</p><p>如对于-11和11，可以通过下面的变换方法将-11变成11</p><pre><code>1111 0101(二进制) –取反-&gt; 0000 1010(二进制) –加1-&gt; 0000 1011(二进制)</code></pre><p>同样可以这样的将11变成-11</p><pre><code>0000 1011(二进制) –取反-&gt; 0000 0100(二进制) –加1-&gt; 1111 0101(二进制)</code></pre><p>因此变换符号只需要取反后加1即可。完整代码如下：   </p><p>#include &lt;stdio.h&gt;<br>int SignReversal(int a)<br>{<br>    return ~a + 1;<br>}<br>int main()<br>{<br>    printf(“对整数变换符号 — by More  —\n\n”);<br>    int a = 7, b = -12345;<br>    printf(“%d  %d\n”, SignReversal(a), SignReversal(b));<br>    return 0;<br>}<br>4．求绝对值<br>位操作也可以用来求绝对值，对于负数可以通过对其取反后加1来得到正数。对-6可以这样：</p><pre><code>1111 1010(二进制) –取反-&gt;0000 0101(二进制) -加1-&gt; 0000 0110(二进制)</code></pre><p>来得到6。</p><p>因此先移位来取符号位，int i = a &gt;&gt; 31;要注意如果a为正数，i等于0，为负数，i等于-1。然后对i进行判断——如果i等于0，直接返回。否之，返回~a+1。完整代码如下：</p><p>int my_abs(int a)<br>{<br>    int i = a &gt;&gt; 31;<br>    return i == 0 ? a : (~a + 1);<br>}<br>现在再分析下。对于任何数，与0异或都会保持不变，与-1即0xFFFFFFFF异或就相当于取反。因此，a与i异或后再减i（因为i为0或-1，所以减i即是要么加0要么加1）也可以得到绝对值。所以可以对上面代码优化下：</p><p>int my_abs(int a)<br>{<br>    int i = a &gt;&gt; 31;<br>    return ((a ^ i) - i);<br>}<br>注意这种方法没用任何判断表达式，而且有些笔面试题就要求这样做，因此建议读者记住该方法（^_^讲解过后应该是比较好记了）。</p><p>注1．int类型一般占4字节，32位。因此15准确表达为</p><p>15=00000000 00000000 00000000 00001111(二进制)</p><p>-15准确表达为</p><p>-15=11111111 11111111 11111111 11110001(二进制)</p><p>为了简便起见，文章中使用15=00001111(二进制)，-15=11110001(二进制)。</p><p>应用．  二进制中1的个数</p><p>统计二进制中1的个数可以直接移位再判断，当然像《编程之美》书中用循环移位计数或先打一个表再计算都可以。本文详细讲解一种高效的方法。以34520为例，可以通过下面四步来计算其二进制中1的个数二进制中1的个数。</p><p>第一步：每2位为一组，组内高低位相加</p><pre><code>10 00 01 10  11 01 10 00</code></pre><p>  –&gt;01 00 01 01  10 01 01 00</p><p>第二步：每4位为一组，组内高低位相加</p><pre><code>0100 0101 1001 0100</code></pre><p>  –&gt;0001 0010 0011 0001</p><p>第三步：每8位为一组，组内高低位相加</p><pre><code>00010010 00110001</code></pre><p>  –&gt;00000011 00000100</p><p>第四步：每16位为一组，组内高低位相加</p><pre><code>00000011 00000100</code></pre><p>  –&gt;00000000 00000111</p><p>这样最后得到的00000000 00000111即7即34520二进制中1的个数。类似上文中对二进制逆序的做法不难实现第一步的代码：</p><pre><code>x = ((x &amp; 0xAAAA) &gt;&gt; 1) + (x &amp; 0x5555);</code></pre><p>好的，有了第一步，后面几步就请读者完成下吧，先动动笔再看下面的完整代码：</p><p>#include &lt;stdio.h&gt;<br>template <class t><br>void PrintfBinary(T a)<br>{<br>    int i;<br>    for (i = sizeof(a) * 8 - 1; i &gt;= 0; –i)<br>    {<br>        if ((a &gt;&gt; i) &amp; 1)<br>            putchar(‘1’);<br>        else<br>            putchar(‘0’);<br>        if (i == 8)<br>            putchar(‘ ‘);<br>    }<br>    putchar(‘\n’);<br>}<br>int main()<br>{<br>    printf(“二进制中1的个数 — by MoreWindows( <a href="http://blog.csdn.net/MoreWindows" target="_blank" rel="noopener">http://blog.csdn.net/MoreWindows</a> )  —\n\n”);  </class></p><pre><code>unsigned short a = 34520;  printf(&quot;原数    %6d的二进制为:  &quot;, a);  PrintfBinary(a);  a = ((a &amp; 0xAAAA) &gt;&gt; 1) + (a &amp; 0x5555);  a = ((a &amp; 0xCCCC) &gt;&gt; 2) + (a &amp; 0x3333);  a = ((a &amp; 0xF0F0) &gt;&gt; 4) + (a &amp; 0x0F0F);  a = ((a &amp; 0xFF00) &gt;&gt; 8) + (a &amp; 0x00FF);     printf(&quot;计算结果%6d的二进制为:  &quot;, a);     PrintfBinary(a);  return 0;  </code></pre><p>}<br>运行结果如下：</p><p>可以发现巧妙运用分组处理确实是解决很多二进制问题的灵丹妙药。</p><p>转载自：<a href="http://blog.csdn.net/morewindows/article/details/7354571" target="_blank" rel="noopener">http://blog.csdn.net/morewindows/article/details/7354571</a><br>感谢原作者</p>]]></content>
     
     <summary type="html">
     
@@ -252,24 +294,6 @@
       
         &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;你好吗。很久没来这里了。最近很忙呀。&lt;br&gt;学车，机器学习，算法刷题，iOS实战案例操作，数据结构，毕业设计，课外书。&lt;br&gt;又是新的一年。爸妈老了一岁。自己又大了一岁。世界
       
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://hushizhi.github.io/uncategorized/2018/01/09/hello-world.html"/>
-    <id>https://hushizhi.github.io/uncategorized/2018/01/09/hello-world.html</id>
-    <published>2018-01-09T09:10:18.000Z</published>
-    <updated>2018-05-05T07:27:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a> <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
     
     </summary>
     
