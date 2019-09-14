@@ -123,7 +123,7 @@
 
 
 
-  <meta name="keywords" content="iOS,Debug,">
+  <meta name="keywords" content="iOS,内存管理,">
 
 
 
@@ -136,17 +136,18 @@
 
 
 
-<meta name="keywords" content="iOS,Debug">
+<meta name="description" content="ARC 与 MRC 的区别 相同点：均是 Objective-C 使用引用计数管理内存的方式；其中 MRC 是手动引用计数，ARC 是自动引用计数。 区别：ARC 相对 MRC 来说，不需要手动输入retain/release/autorelease,而是在编译期和运行期这两部分帮助开发者管理内存。在编译期期间，ARC自动调用C接口实现在编译代码时自动插入retain/release/autore">
+<meta name="keywords" content="iOS,内存管理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="怎么忽略断言NSAssert">
-<meta property="og:url" content="https://hushizhi.github.io/uncategorized/2019/07/17/怎么忽略断言NSAssert.html">
+<meta property="og:title" content="ARC 与 MRC">
+<meta property="og:url" content="https://hushizhi.github.io/uncategorized/2019/09/14/ARC-与-MRC.html">
 <meta property="og:site_name" content="joyo">
+<meta property="og:description" content="ARC 与 MRC 的区别 相同点：均是 Objective-C 使用引用计数管理内存的方式；其中 MRC 是手动引用计数，ARC 是自动引用计数。 区别：ARC 相对 MRC 来说，不需要手动输入retain/release/autorelease,而是在编译期和运行期这两部分帮助开发者管理内存。在编译期期间，ARC自动调用C接口实现在编译代码时自动插入retain/release/autore">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://hushizhi.github.io/uncategorized/2019/07/17/怎么忽略断言NSAssert.html">
-<meta property="og:updated_time" content="2019-09-14T07:08:06.555Z">
+<meta property="og:updated_time" content="2019-09-14T09:35:33.913Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="怎么忽略断言NSAssert">
-<meta name="twitter:image" content="https://hushizhi.github.io/uncategorized/2019/07/17/怎么忽略断言NSAssert.html">
+<meta name="twitter:title" content="ARC 与 MRC">
+<meta name="twitter:description" content="ARC 与 MRC 的区别 相同点：均是 Objective-C 使用引用计数管理内存的方式；其中 MRC 是手动引用计数，ARC 是自动引用计数。 区别：ARC 相对 MRC 来说，不需要手动输入retain/release/autorelease,而是在编译期和运行期这两部分帮助开发者管理内存。在编译期期间，ARC自动调用C接口实现在编译代码时自动插入retain/release/autore">
 
 
 
@@ -176,13 +177,13 @@
 
 
 
-  <link rel="canonical" href="https://hushizhi.github.io/uncategorized/2019/07/17/怎么忽略断言NSAssert.html">
+  <link rel="canonical" href="https://hushizhi.github.io/uncategorized/2019/09/14/ARC-与-MRC.html">
 
 
 
 
 
-  <title>怎么忽略断言NSAssert | joyo</title>
+  <title>ARC 与 MRC | joyo</title>
   
 
 
@@ -334,7 +335,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://hushizhi.github.io/uncategorized/2019/07/17/怎么忽略断言NSAssert.html">
+    <link itemprop="mainEntityOfPage" href="https://hushizhi.github.io/uncategorized/2019/09/14/ARC-与-MRC.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="戚灼伟">
@@ -351,7 +352,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">怎么忽略断言NSAssert</h1>
+          <h1 class="post-title" itemprop="name headline">ARC 与 MRC</h1>
         
 
         <div class="post-meta">
@@ -363,8 +364,8 @@
               
                 <span class="post-meta-item-text">发表</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-17T09:26:27+08:00">
-                2019-07-17
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-14T17:32:52+08:00">
+                2019-09-14
               </time>
             
 
@@ -379,7 +380,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-09-14T15:08:06+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-09-14T17:35:33+08:00">
                 2019-09-14
               </time>
             
@@ -394,8 +395,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/uncategorized/2019/07/17/怎么忽略断言NSAssert.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/uncategorized/2019/07/17/怎么忽略断言NSAssert.html" itemprop="commentCount"></span>
+                <a href="/uncategorized/2019/09/14/ARC-与-MRC.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/uncategorized/2019/09/14/ARC-与-MRC.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -403,7 +404,7 @@
 
           
           
-             <span id="/uncategorized/2019/07/17/怎么忽略断言NSAssert.html" class="leancloud_visitors" data-flag-title="怎么忽略断言NSAssert">
+             <span id="/uncategorized/2019/09/14/ARC-与-MRC.html" class="leancloud_visitors" data-flag-title="ARC 与 MRC">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -434,13 +435,23 @@
       
 
       
-        <script src="/assets/js/APlayer.min.js"> </script><p class="description"></p>
-
-<p><img src="https://" alt style="width:100%"></p>
+        <script src="/assets/js/APlayer.min.js"> </script><h2 id="ARC-与-MRC-的区别"><a href="#ARC-与-MRC-的区别" class="headerlink" title="ARC 与 MRC 的区别"></a>ARC 与 MRC 的区别</h2><ol>
+<li>相同点：均是 Objective-C 使用引用计数管理内存的方式；其中 MRC 是手动引用计数，ARC 是自动引用计数。</li>
+<li><p>区别：ARC 相对 MRC 来说，不需要手动输入retain/release/autorelease,而是在编译期和运行期这两部分帮助开发者管理内存。<br>在编译期期间，ARC自动调用C接口实现在编译代码时自动插入retain/release/autorelease;在运行期期间，使用 runtime 配合来管理内存。</p>
 <a id="more"></a>
-<p>##</p>
-<p>##</p>
-<p>##</p>
+</li>
+<li><p>Autorelease: 即添加到自动释放池中。自动释放分为两种情况：</p>
+<ol>
+<li>手动干预释放时机：指定autoreleasepool，就是所谓的作用域大括号结束释放；</li>
+<li>系统自动释放：不手动指定autoreleasepool。autorelease对象出了作用域后，会被自动添加到最近一次创建的自动释放池中，并会在当前runloop迭代结束之后释放。</li>
+</ol>
+</li>
+<li>runloop与autorelease:<ol>
+<li>runloop从程序启动到加载完成是一个完整的运行循环，然后会停下来，等待用户交互，用户的每一次交互都会启动一次运行循环，这时候回创建自动释放池，来处理用户所有的点击、交互事件，在一次完整的运行循环结束之前，会销毁自动释放池，达到销毁对象的目的。</li>
+</ol>
+</li>
+</ol>
+<h2 id="引用计数-与-GC-的区别"><a href="#引用计数-与-GC-的区别" class="headerlink" title="引用计数 与 GC 的区别"></a>引用计数 与 GC 的区别</h2><p>待补充。</p>
 <hr>
       
     </div>
@@ -472,7 +483,7 @@
           
             <a href="/tags/iOS/" rel="tag"><i class="fa fa-tag"></i> iOS</a>
           
-            <a href="/tags/Debug/" rel="tag"><i class="fa fa-tag"></i> Debug</a>
+            <a href="/tags/内存管理/" rel="tag"><i class="fa fa-tag"></i> 内存管理</a>
           
         </div>
       
@@ -497,8 +508,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/uncategorized/2018/12/01/编程范式思维.html" rel="next" title="编程范式思维">
-                <i class="fa fa-chevron-left"></i> 编程范式思维
+              <a href="/uncategorized/2019/07/17/怎么忽略断言NSAssert.html" rel="next" title="怎么忽略断言NSAssert">
+                <i class="fa fa-chevron-left"></i> 怎么忽略断言NSAssert
               </a>
             
           </div>
@@ -506,10 +517,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/uncategorized/2019/09/14/ARC-与-MRC.html" rel="prev" title="ARC 与 MRC">
-                ARC 与 MRC <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -566,8 +573,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -697,6 +713,22 @@ show_date_time();
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ARC-与-MRC-的区别"><span class="nav-number">1.</span> <span class="nav-text">ARC 与 MRC 的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引用计数-与-GC-的区别"><span class="nav-number">2.</span> <span class="nav-text">引用计数 与 GC 的区别</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

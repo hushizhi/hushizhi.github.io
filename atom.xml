@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hushizhi.github.io/"/>
-  <updated>2019-09-14T07:08:06.555Z</updated>
+  <updated>2019-09-14T09:35:33.913Z</updated>
   <id>https://hushizhi.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ARC 与 MRC</title>
+    <link href="https://hushizhi.github.io/uncategorized/2019/09/14/ARC-%E4%B8%8E-MRC.html"/>
+    <id>https://hushizhi.github.io/uncategorized/2019/09/14/ARC-与-MRC.html</id>
+    <published>2019-09-14T09:32:52.000Z</published>
+    <updated>2019-09-14T09:35:33.913Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="ARC-与-MRC-的区别"><a href="#ARC-与-MRC-的区别" class="headerlink" title="ARC 与 MRC 的区别"></a>ARC 与 MRC 的区别</h2><ol><li>相同点：均是 Objective-C 使用引用计数管理内存的方式；其中 MRC 是手动引用计数，ARC 是自动引用计数。</li><li><p>区别：ARC 相对 MRC 来说，不需要手动输入retain/release/autorelease,而是在编译期和运行期这两部分帮助开发者管理内存。<br>在编译期期间，ARC自动调用C接口实现在编译代码时自动插入retain/release/autorelease;在运行期期间，使用 runtime 配合来管理内存。</p><a id="more"></a></li><li><p>Autorelease: 即添加到自动释放池中。自动释放分为两种情况：</p><ol><li>手动干预释放时机：指定autoreleasepool，就是所谓的作用域大括号结束释放；</li><li>系统自动释放：不手动指定autoreleasepool。autorelease对象出了作用域后，会被自动添加到最近一次创建的自动释放池中，并会在当前runloop迭代结束之后释放。</li></ol></li><li>runloop与autorelease:<ol><li>runloop从程序启动到加载完成是一个完整的运行循环，然后会停下来，等待用户交互，用户的每一次交互都会启动一次运行循环，这时候回创建自动释放池，来处理用户所有的点击、交互事件，在一次完整的运行循环结束之前，会销毁自动释放池，达到销毁对象的目的。</li></ol></li></ol><h2 id="引用计数-与-GC-的区别"><a href="#引用计数-与-GC-的区别" class="headerlink" title="引用计数 与 GC 的区别"></a>引用计数 与 GC 的区别</h2><p>待补充。</p><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;ARC-与-MRC-的区别&quot;&gt;&lt;a href=&quot;#ARC-与-MRC-的区别&quot; class=&quot;headerlink&quot; title=&quot;ARC 与 MRC 的区别&quot;&gt;&lt;/a&gt;ARC 与 MRC 的区别&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;相同点：均是 Objective-C 使用引用计数管理内存的方式；其中 MRC 是手动引用计数，ARC 是自动引用计数。&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;区别：ARC 相对 MRC 来说，不需要手动输入retain/release/autorelease,而是在编译期和运行期这两部分帮助开发者管理内存。&lt;br&gt;在编译期期间，ARC自动调用C接口实现在编译代码时自动插入retain/release/autorelease;在运行期期间，使用 runtime 配合来管理内存。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://hushizhi.github.io/tags/iOS/"/>
+    
+      <category term="内存管理" scheme="https://hushizhi.github.io/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>怎么忽略断言NSAssert</title>

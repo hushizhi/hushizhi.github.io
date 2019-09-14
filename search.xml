@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ARC 与 MRC]]></title>
+    <url>%2Funcategorized%2F2019%2F09%2F14%2FARC-%E4%B8%8E-MRC.html</url>
+    <content type="text"><![CDATA[ARC 与 MRC 的区别 相同点：均是 Objective-C 使用引用计数管理内存的方式；其中 MRC 是手动引用计数，ARC 是自动引用计数。 区别：ARC 相对 MRC 来说，不需要手动输入retain/release/autorelease,而是在编译期和运行期这两部分帮助开发者管理内存。在编译期期间，ARC自动调用C接口实现在编译代码时自动插入retain/release/autorelease;在运行期期间，使用 runtime 配合来管理内存。 Autorelease: 即添加到自动释放池中。自动释放分为两种情况： 手动干预释放时机：指定autoreleasepool，就是所谓的作用域大括号结束释放； 系统自动释放：不手动指定autoreleasepool。autorelease对象出了作用域后，会被自动添加到最近一次创建的自动释放池中，并会在当前runloop迭代结束之后释放。 runloop与autorelease: runloop从程序启动到加载完成是一个完整的运行循环，然后会停下来，等待用户交互，用户的每一次交互都会启动一次运行循环，这时候回创建自动释放池，来处理用户所有的点击、交互事件，在一次完整的运行循环结束之前，会销毁自动释放池，达到销毁对象的目的。 引用计数 与 GC 的区别待补充。]]></content>
+      <tags>
+        <tag>iOS</tag>
+        <tag>内存管理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[怎么忽略断言NSAssert]]></title>
     <url>%2Funcategorized%2F2019%2F07%2F17%2F%E6%80%8E%E4%B9%88%E5%BF%BD%E7%95%A5%E6%96%AD%E8%A8%80NSAssert.html</url>
     <content type="text"><![CDATA[## ## ##]]></content>
