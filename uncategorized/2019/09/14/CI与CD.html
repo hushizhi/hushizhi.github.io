@@ -147,7 +147,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/09/14/fGQ7lCKRPyoc3pt.png">
 <meta property="og:image" content="https://i.loli.net/2019/09/14/VsbJywcHPN78h3m.png">
 <meta property="og:image" content="https://i.loli.net/2019/09/14/xPkvVNCKwJTDMaq.png">
-<meta property="og:updated_time" content="2019-09-14T12:02:41.636Z">
+<meta property="og:updated_time" content="2019-09-14T12:04:02.989Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="工程方法 - CI&#x2F;CD">
 <meta name="twitter:description" content="背景在比较小且快速的迭代开发过程中，持续验证系统的开发成果，小步快跑式地尽早确认，期望开发尽可能完全符合原始需求，或者依据产出进行快速修正。 简单地说，是尽量减少人力手动操作，将一些日常工作交给机器进行自动化处理。如环境配置、单元测试、日志记录、打包部署等。 一切业务的更替发展必须建立在稳定性的基础上。业务 RD 是平台服务的搭建者，书写出无 bug 的代码是夯实稳定性根基的重要手段。 根据以往经">
@@ -384,7 +384,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-09-14T20:02:41+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-09-14T20:04:02+08:00">
                 2019-09-14
               </time>
             
@@ -481,11 +481,8 @@
 </blockquote>
 <p>持续部署是持续交付的下一步，指的是代码通过评审后，自动地部署到生产环境。持续部署的目标是，代码在任何时刻都是可部署的，可以进入生产阶段。</p>
 <p><img src="https://i.loli.net/2019/09/14/xPkvVNCKwJTDMaq.png" alt="20190914194507.png"></p>
-<h4 id="根据以上是3个步骤的循环迭代，就可以针对每个软件系统每次代码变动，持续自动地进行验证。这些验证包括以下方面："><a href="#根据以上是3个步骤的循环迭代，就可以针对每个软件系统每次代码变动，持续自动地进行验证。这些验证包括以下方面：" class="headerlink" title="根据以上是3个步骤的循环迭代，就可以针对每个软件系统每次代码变动，持续自动地进行验证。这些验证包括以下方面："></a>根据以上是3个步骤的循环迭代，就可以针对每个软件系统每次代码变动，持续自动地进行验证。这些验证包括以下方面：</h4><pre><code>1. Build
-2. Test
-3. Source Code Analysis
-4. Auto Deployment
-</code></pre><h4 id="通过这个流程，可以确保软件质量，不会因为一个变动而产生错误甚至崩溃。同时，流程的最后会产出一些质量报告，用做后续分析并发现软件中仍然潜在的问题。"><a href="#通过这个流程，可以确保软件质量，不会因为一个变动而产生错误甚至崩溃。同时，流程的最后会产出一些质量报告，用做后续分析并发现软件中仍然潜在的问题。" class="headerlink" title="通过这个流程，可以确保软件质量，不会因为一个变动而产生错误甚至崩溃。同时，流程的最后会产出一些质量报告，用做后续分析并发现软件中仍然潜在的问题。"></a>通过这个流程，可以确保软件质量，不会因为一个变动而产生错误甚至崩溃。同时，流程的最后会产出一些质量报告，用做后续分析并发现软件中仍然潜在的问题。</h4><h2 id="工具的选择"><a href="#工具的选择" class="headerlink" title="工具的选择"></a>工具的选择</h2><h3 id="Jenkins"><a href="#Jenkins" class="headerlink" title="Jenkins"></a>Jenkins</h3><h3 id="MCI"><a href="#MCI" class="headerlink" title="MCI"></a>MCI</h3><h3 id="Hyperloop"><a href="#Hyperloop" class="headerlink" title="Hyperloop"></a>Hyperloop</h3><h2 id="运作流程"><a href="#运作流程" class="headerlink" title="运作流程"></a>运作流程</h2><hr>
+<h4 id="根据以上是3个步骤的循环迭代，就可以针对每个软件系统每次代码变动，持续自动地进行验证。这些验证包括以下方面："><a href="#根据以上是3个步骤的循环迭代，就可以针对每个软件系统每次代码变动，持续自动地进行验证。这些验证包括以下方面：" class="headerlink" title="根据以上是3个步骤的循环迭代，就可以针对每个软件系统每次代码变动，持续自动地进行验证。这些验证包括以下方面："></a>根据以上是3个步骤的循环迭代，就可以针对每个软件系统每次代码变动，持续自动地进行验证。这些验证包括以下方面：</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1. </span>Build</span><br><span class="line"><span class="bullet">2. </span>Test</span><br><span class="line"><span class="bullet">3. </span>Source Code Analysis</span><br><span class="line"><span class="bullet">4. </span>Auto Deployment</span><br></pre></td></tr></table></figure>
+<h4 id="通过这个流程，可以确保软件质量，不会因为一个变动而产生错误甚至崩溃。同时，流程的最后会产出一些质量报告，用做后续分析并发现软件中仍然潜在的问题。"><a href="#通过这个流程，可以确保软件质量，不会因为一个变动而产生错误甚至崩溃。同时，流程的最后会产出一些质量报告，用做后续分析并发现软件中仍然潜在的问题。" class="headerlink" title="通过这个流程，可以确保软件质量，不会因为一个变动而产生错误甚至崩溃。同时，流程的最后会产出一些质量报告，用做后续分析并发现软件中仍然潜在的问题。"></a>通过这个流程，可以确保软件质量，不会因为一个变动而产生错误甚至崩溃。同时，流程的最后会产出一些质量报告，用做后续分析并发现软件中仍然潜在的问题。</h4><h2 id="工具的选择"><a href="#工具的选择" class="headerlink" title="工具的选择"></a>工具的选择</h2><h3 id="Jenkins"><a href="#Jenkins" class="headerlink" title="Jenkins"></a>Jenkins</h3><h3 id="MCI"><a href="#MCI" class="headerlink" title="MCI"></a>MCI</h3><h3 id="Hyperloop"><a href="#Hyperloop" class="headerlink" title="Hyperloop"></a>Hyperloop</h3><h2 id="运作流程"><a href="#运作流程" class="headerlink" title="运作流程"></a>运作流程</h2><hr>
       
     </div>
     
