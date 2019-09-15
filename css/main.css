@@ -186,7 +186,7 @@ th {
 body {
   position: relative;
   font-family: "Microsoft YaHei", Verdana, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 2;
   color: #555;
   background: #fff;
@@ -445,7 +445,7 @@ body {
 .header-inner {
   margin: 0 auto;
   padding: 100px 0 70px;
-  width: 900px;
+  width: 800px;
 }
 @media (min-width: 1600px) {
   .container .header-inner {
@@ -457,7 +457,7 @@ body {
 }
 .main-inner {
   margin: 0 auto;
-  width: 900px;
+  width: 800px;
 }
 @media (min-width: 1600px) {
   .container .main-inner {
@@ -474,7 +474,7 @@ body {
 .footer-inner {
   box-sizing: border-box;
   margin: 20px auto;
-  width: 900px;
+  width: 800px;
 }
 @media (min-width: 1600px) {
   .container .footer-inner {
@@ -486,7 +486,7 @@ pre,
   overflow: auto;
   margin: 20px 0;
   padding: 0;
-  font-size: 13px;
+  font-size: 12px;
   color: #ccc;
   background: #2d2d2d;
   line-height: 1.6;
@@ -501,7 +501,7 @@ code {
   color: #555;
   background: #eee;
   border-radius: 3px;
-  font-size: 13px;
+  font-size: 12px;
 }
 pre {
   padding: 10px;
@@ -1283,7 +1283,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: -20px auto 15px;
   text-align: center;
-  font-size: 15px;
+  font-size: 14px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1968,7 +1968,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #746eed;
+  background: #6acd1b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2872,7 +2872,7 @@ body {
 }
 .menu .menu-item a {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
 }
 .menu .menu-item {
   margin: 5px 15px;
@@ -2971,9 +2971,10 @@ body {
   font-weight: bold;
 }
 .comments {
-  background-color: #eee;
-  box-shadow: 0px px 5px 0px rgba(0,0,0,0.35);
-  margin: 30px 0px 20px 0px;
+  background-color: #e6e6f2;
+  box-shadow: 5px px 5px 0px Reba(120, 46, 2, 0.35);
+  border-radius: 10px;
+  margin: 30px 0px 30px 0px;
 }
 a {
   color: #5073b8;
@@ -3208,13 +3209,11 @@ img:hover {
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 .post-block.page {
-  margin-top: 40px;
+  margin-top: 90px;
 }
 .category-all-page {
-  margin: -80px 50px 40px 50px;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-  background-color: #fff;
-  padding: 86px 36px 36px 36px;
+  margin: 50px 50px 40px 50px;
+  padding: 5px 36px 36px 36px;
 }
 @media (max-width: 767px) {
   .category-all-page {
@@ -3503,7 +3502,7 @@ code.description {
 }
 @media (max-width: 767px) {
   .site-title {
-    font-size: 70px !important;
+    font-size: 27px !important;
     letter-spacing: 0px !important;
   }
   .site-subtitle {
