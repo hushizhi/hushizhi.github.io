@@ -150,7 +150,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/09/14/xPkvVNCKwJTDMaq.png">
 <meta property="og:image" content="https://i.loli.net/2019/09/21/MhezwJDFZv4QdNm.png">
 <meta property="og:image" content="https://i.loli.net/2019/09/21/AkcWglZVe2NfuP7.png">
-<meta property="og:updated_time" content="2019-09-21T09:46:21.372Z">
+<meta property="og:updated_time" content="2019-09-21T09:47:01.807Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="工程方法 - CI&#x2F;CD">
 <meta name="twitter:description" content="背景&amp;emsp;&amp;emsp;在比较小且快速的迭代开发过程中，持续验证系统的开发成果，小步快跑式地尽早确认，期望开发尽可能完全符合原始需求，或者依据产出进行快速修正。&amp;emsp;&amp;emsp;简单地说，是尽量减少人力手动操作，将一些日常工作交给机器进行自动化处理。如环境配置、单元测试、日志记录、打包部署等。&amp;emsp;&amp;emsp;一切业务的更替发展必须建立在稳定性的基础上。业务 RD 是平台服务的搭建">
@@ -387,7 +387,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-09-21T17:46:21+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-09-21T17:47:01+08:00">
                 2019-09-21
               </time>
             
@@ -490,7 +490,7 @@
 </code></pre><p><strong>通过这个流程，可以确保软件质量，不会因为一个变动而产生错误甚至崩溃。同时，流程的最后会产出一些质量报告，用做后续分析并发现软件中仍然潜在的问题</strong></p>
 <h2 id="工具的选择"><a href="#工具的选择" class="headerlink" title="工具的选择"></a>工具的选择</h2><p>作为工作流中不可或缺的一环，CI 系统的目标是打造集 iOS 应用测试，集成，测试与打包为一体的平台，支撑 iOS 应用的质量保障及持续交付。</p>
 <p>主要有以下 3 中工具：老牌的 Jenkins，插件齐全的 MCI， Hyperloop。</p>
-<h3 id="Jenkins"><a href="#Jenkins" class="headerlink" title="Jenkins"></a>Jenkins</h3><p>&emsp;&emsp;Jenkins 是一个基于 JAVA 、开源的持续集成平台。Jenkins 的一个强大之处是支持插件，所以可以按需扩展出各种各样的功能，形成独特的平台。<br><br>&emsp;&emsp;一个集群由一台 master 及数台 slave 组成， slave 可以有多个 executor 用于执行 job，job 可以是构建，单测，管理 slave 等。<br><br>&emsp;&emsp;Jenkins的功能完整，也提供了上千個插件 (Plugins) 來应对各种开发语言和工具。Jenkins 目前已发展到了 2.x 版，新版本中对于 Pipeline 概念及容器 (Container) 整合也趋于完整，是一套可以自定义运行的系統。但也因為其功能強大、可定制程度高，上手使用需要一些时间。然而一旦流程被定义好，并整合好相关环境，它就可以发挥持续整合的威力，大幅提高开发生产力。</p>
+<h3 id="Jenkins"><a href="#Jenkins" class="headerlink" title="Jenkins"></a>Jenkins</h3><p>&emsp;&emsp;Jenkins 是一个基于 JAVA 、开源的持续集成平台。Jenkins 的一个强大之处是支持插件，所以可以按需扩展出各种各样的功能，形成独特的平台。<br>&emsp;&emsp;一个集群由一台 master 及数台 slave 组成， slave 可以有多个 executor 用于执行 job，job 可以是构建，单测，管理 slave 等。<br>&emsp;&emsp;Jenkins的功能完整，也提供了上千個插件 (Plugins) 來应对各种开发语言和工具。Jenkins 目前已发展到了 2.x 版，新版本中对于 Pipeline 概念及容器 (Container) 整合也趋于完整，是一套可以自定义运行的系統。但也因為其功能強大、可定制程度高，上手使用需要一些时间。然而一旦流程被定义好，并整合好相关环境，它就可以发挥持续整合的威力，大幅提高开发生产力。</p>
 <h4 id="运作流程"><a href="#运作流程" class="headerlink" title="运作流程"></a>运作流程</h4><h6 id="构建（以单测为例）"><a href="#构建（以单测为例）" class="headerlink" title="构建（以单测为例）"></a>构建（以单测为例）</h6><p><img src="https://i.loli.net/2019/09/21/MhezwJDFZv4QdNm.png" alt="20190921165111.png"></p>
 <h6 id="打包（以-beta-版本为例）"><a href="#打包（以-beta-版本为例）" class="headerlink" title="打包（以 beta 版本为例）"></a>打包（以 beta 版本为例）</h6><p><img src="https://i.loli.net/2019/09/21/AkcWglZVe2NfuP7.png" alt="20190921165232.png"></p>
 <h3 id="MCI"><a href="#MCI" class="headerlink" title="MCI"></a>MCI</h3><h3 id="Hyperloop"><a href="#Hyperloop" class="headerlink" title="Hyperloop"></a>Hyperloop</h3><hr>
