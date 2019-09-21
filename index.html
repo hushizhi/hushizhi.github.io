@@ -381,7 +381,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-09-21T17:39:55+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-09-21T17:42:35+08:00">
                 2019-09-21
               </time>
             
@@ -460,7 +460,6 @@
 </blockquote>
 <p>持续集成指的是，频繁地（一天多次）将代码集成到主干。<br>持续集成的目的，就是让产品快速迭代，同时还能保持高质量。<br>它的核心措施是，代码集成到主干之前，必须通过自动化测试，只要有一个测试用例失败，就不能集成。</p>
 <p><img src="https://i.loli.net/2019/09/14/fGQ7lCKRPyoc3pt.png" alt="20190914194149.png"></p>
-<p><img src="https://i.loli.net/2019/09/14/fGQ7lCKRPyoc3pt.png" width="250" height="100"></p>
 <ol>
 <li><strong>持续交付（Continuous Delivery）</strong></li>
 </ol>
@@ -477,11 +476,13 @@
 </blockquote>
 <p>持续部署是持续交付的下一步，指的是代码通过评审后，自动地部署到生产环境。持续部署的目标是，代码在任何时刻都是可部署的，可以进入生产阶段。</p>
 <p><img src="https://i.loli.net/2019/09/14/xPkvVNCKwJTDMaq.png" alt="20190914194507.png"></p>
-<h4 id="根据以上是3个步骤的循环迭代，就可以针对每个软件系统每次代码变动，持续自动地进行验证。这些验证包括以下方面"><a href="#根据以上是3个步骤的循环迭代，就可以针对每个软件系统每次代码变动，持续自动地进行验证。这些验证包括以下方面" class="headerlink" title="根据以上是3个步骤的循环迭代，就可以针对每个软件系统每次代码变动，持续自动地进行验证。这些验证包括以下方面"></a>根据以上是3个步骤的循环迭代，就可以针对每个软件系统每次代码变动，持续自动地进行验证。这些验证包括以下方面</h4><pre><code>1. Build
+<p><strong>根据以上是3个步骤的循环迭代，就可以针对每个软件系统每次代码变动，持续自动地进行验证。这些验证包括以下方面</strong></p>
+<pre><code>1. Build
 2. Test
 3. Source Code Analysis
 4. Auto Deployment
-</code></pre><h4 id="通过这个流程，可以确保软件质量，不会因为一个变动而产生错误甚至崩溃。同时，流程的最后会产出一些质量报告，用做后续分析并发现软件中仍然潜在的问题"><a href="#通过这个流程，可以确保软件质量，不会因为一个变动而产生错误甚至崩溃。同时，流程的最后会产出一些质量报告，用做后续分析并发现软件中仍然潜在的问题" class="headerlink" title="通过这个流程，可以确保软件质量，不会因为一个变动而产生错误甚至崩溃。同时，流程的最后会产出一些质量报告，用做后续分析并发现软件中仍然潜在的问题"></a>通过这个流程，可以确保软件质量，不会因为一个变动而产生错误甚至崩溃。同时，流程的最后会产出一些质量报告，用做后续分析并发现软件中仍然潜在的问题</h4><h2 id="工具的选择"><a href="#工具的选择" class="headerlink" title="工具的选择"></a>工具的选择</h2><p>作为工作流中不可或缺的一环，CI 系统的目标是打造集 iOS 应用测试，集成，测试与打包为一体的平台，支撑 iOS 应用的质量保障及持续交付。</p>
+</code></pre><p><strong>通过这个流程，可以确保软件质量，不会因为一个变动而产生错误甚至崩溃。同时，流程的最后会产出一些质量报告，用做后续分析并发现软件中仍然潜在的问题</strong></p>
+<h2 id="工具的选择"><a href="#工具的选择" class="headerlink" title="工具的选择"></a>工具的选择</h2><p>作为工作流中不可或缺的一环，CI 系统的目标是打造集 iOS 应用测试，集成，测试与打包为一体的平台，支撑 iOS 应用的质量保障及持续交付。</p>
 <p>主要有以下 3 中工具：老牌的 Jenkins，插件齐全的 MCI， Hyperloop。</p>
 <h3 id="Jenkins"><a href="#Jenkins" class="headerlink" title="Jenkins"></a>Jenkins</h3><p>&emsp;&emsp;Jenkins 是一个基于 JAVA 、开源的持续集成平台。Jenkins 的一个强大之处是支持插件，所以可以按需扩展出各种各样的功能，形成独特的平台。<br><br>&emsp;&emsp;一个集群由一台 master 及数台 slave 组成， slave 可以有多个 executor 用于执行 job，job 可以是构建，单测，管理 slave 等。<br><br>&emsp;&emsp;Jenkins的功能完整，也提供了上千個插件 (Plugins) 來应对各种开发语言和工具。Jenkins 目前已发展到了 2.x 版，新版本中对于 Pipeline 概念及容器 (Container) 整合也趋于完整，是一套可以自定义运行的系統。但也因為其功能強大、可定制程度高，上手使用需要一些时间。然而一旦流程被定义好，并整合好相关环境，它就可以发挥持续整合的威力，大幅提高开发生产力。</p>
 <h4 id="运作流程"><a href="#运作流程" class="headerlink" title="运作流程"></a>运作流程</h4><h6 id="构建（以单测为例）"><a href="#构建（以单测为例）" class="headerlink" title="构建（以单测为例）"></a>构建（以单测为例）</h6><p><img src="https://i.loli.net/2019/09/21/MhezwJDFZv4QdNm.png" alt="20190921165111.png"></p>
